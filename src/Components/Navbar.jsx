@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import { ReactComponent as LogoSvg } from "./logo_maduvan.svg";
 
 const DonateButton = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleHamburgerClick = () => {
     setIsMenuOpen(!isMenuOpen);
-    // Add your logic for handling the menu toggle
+    // logic for handling the menu toggle
   };
 
   return (
@@ -16,13 +17,31 @@ const DonateButton = () => {
           position: "fixed",
           top: "20px",
           left: "20px",
-          fontSize: "26px", // Adjusted to make it a bit thinner
-          color: "#254C36", // Color set to #254C36
+          fontSize: "26px",
+          color: "#254C36",
           cursor: "pointer",
         }}
         onClick={handleHamburgerClick}
       >
         ☰
+      </div>
+
+      {/* Middle top icon (replace with your own icon or SVG code) */}
+      <div
+        style={{
+          position: "fixed",
+          top: "20px",
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: "40px",
+          height: "40px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          cursor: "pointer",
+        }}
+      >
+        <LogoSvg />
       </div>
 
       {/* Donate Button on the right */}
@@ -48,7 +67,7 @@ const DonateButton = () => {
             fontFamily: "Yeseva One",
             fontWeight: 400,
             fontSize: "18px",
-            color: "#254C36", // Color set to #254C36
+            color: "#254C36",
           }}
         >
           Donate
