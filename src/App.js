@@ -1,11 +1,14 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./Components/Navbar.jsx";
+import Homepage from "./Components/homepage";
+
+
 function App() {
   return (
-    <>
-      <Navbar />
-    </>
+    <div>
+      <Homepage />
+      
+    </div>
   );
 }
 export default App;

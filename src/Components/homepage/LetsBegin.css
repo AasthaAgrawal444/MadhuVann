@@ -1,0 +1,66 @@
+.flex-parent {
+    display: flex;
+  }
+  .flex-child {
+    flex: 1;
+  }
+
+#part1{
+  font-size: 55px;
+  padding-left: 60px;
+  
+}
+#part2{
+  font-size: 25px;
+  padding-left: 55px;
+}
+.child2 {
+  border: 5px;
+
+}
+.first{
+  background-color: #254C36;
+  height: 4.5rem;
+  border: 5px white;
+  color: whitesmoke;
+  border-radius: 100px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    
+
+}
+.second{
+  background-color: #254C36;
+  height: 4rem;
+  color: whitesmoke;
+  border-radius: 100px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+.third{
+  background-color: #254C36;
+  height: 4rem;
+  color: whitesmoke;
+  border-radius: 100px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;}
+
+.letsbegin{
+  border-radius: 40% 0% 40% 0%;
+  width:200px;
+  height: 60px;
+  font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 25px;
+    background-color: #254C36;
+    color: whitesmoke;
+    
+    
+}
