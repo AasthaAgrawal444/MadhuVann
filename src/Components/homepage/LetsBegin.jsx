@@ -14,7 +14,7 @@ It is only a click away!</p>
                 <div class="first">Explore all kinds of fauna</div>
                 <div class="second">Witness the greenery</div>
                 <div class="third">see them come to life</div>
-                <button class="letsbegin">Let's Begin</button>
+                <div ><button class="letsbegin">Let's Begin</button></div>
             </div>
         </div>
         

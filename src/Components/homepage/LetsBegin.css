@@ -28,7 +28,7 @@
   font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    
+    padding-top: 20px;
 
 }
 .second{
@@ -40,6 +40,7 @@
   font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    padding-top: 20px;
 }
 .third{
   background-color: #254C36;
@@ -49,10 +50,13 @@
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;}
+  sans-serif;
+padding-top: 20px;
+}
+  
 
 .letsbegin{
-  border-radius: 40% 0% 40% 0%;
+  border-radius: 1em 0% 1em 0%;
   width:200px;
   height: 60px;
   font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
