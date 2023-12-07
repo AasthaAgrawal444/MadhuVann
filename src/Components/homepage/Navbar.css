@@ -1,0 +1,39 @@
+.Flex_bar
+{
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+
+    
+}
+button{
+    background-color: #97B18E;
+    border-radius: 2rem;
+    width:8rem;
+    color: #365945;
+    font-size: 1rem;
+    
+}
+.donate_icon
+{
+    background-color:#97B18E ;
+}
+.donate{
+display: flex;
+align-items: center;
+}
+.button_div
+{
+    align-content: center;
+}
+.button_label
+{
+    color: #365945;
+    display: inline;
+    background-color: #97B18E;
+}
+.button
+{
+    display: flex;
+    align-content: center;
+}
