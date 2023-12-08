@@ -21,9 +21,9 @@ body {
   position: relative;
   background-color: #97b18e;
   border-radius: 3rem;
-  border: #111;
-  border-width: 2px;
-  border-style: solid;
+  /* border: #111; */
+  /* border-width: 2px; */
+  /* border-style: solid; */
   margin: 1rem;
   flex: 1 0 25rem;
   max-width: 22rem;
@@ -59,7 +59,7 @@ body {
 
 .cardbottom {
   height: 30%;
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 .descript {
@@ -68,14 +68,15 @@ body {
   font-size: 17px;
   font-style: normal;
   font-weight: 500;
+  height: 3.5rem;
 }
 
 .desborder {
     margin-top: 1.5rem;
     border-bottom: 0px;
     border-style: solid;
-    width: 100%;
-    margin-left: -1.65rem;
+    width: 98.5%;
+    margin-left: -1rem;
     position: absolute;
 }
 
