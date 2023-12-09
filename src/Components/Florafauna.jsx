@@ -13,8 +13,8 @@ const GreenRectangleWithCircles = () => {
 
   const rectangleStyle = {
     position: "relative",
-    width: "800px",
-    height: "300px",
+    width: "900px",
+    height: "350px",
     backgroundColor: "#254C36",
     margin: "0 20px",
     borderRadius: "0 50rem 50rem 0",
@@ -100,7 +100,7 @@ const GreenRectangleWithCircles = () => {
               position: "absolute",
               top: "50%",
               transform: "translateY(-50%)",
-              right: "5px",
+              right: "22px",
             }}
           />
         </div>
@@ -113,7 +113,7 @@ const GreenRectangleWithCircles = () => {
               position: "absolute",
               top: "50%",
               transform: "translateY(-50%)",
-              right: "5px",
+              right: "22px",
             }}
           />
         </div>
