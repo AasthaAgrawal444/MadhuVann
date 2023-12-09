@@ -1,0 +1,85 @@
+.all{
+    margin-left: 12rem;
+    margin-right: 12rem;
+    
+}
+/* Header */
+.headIUCN{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 00;
+
+}
+button{
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 300;
+    height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.buttonIUCN{
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+}
+.one{
+    
+    color:red;
+    background-color: black;
+}
+.two{
+    
+    color:white;
+    background-color: black;
+}
+.three{
+    
+    color:rgb(228, 141, 141);
+    background-color: rgb(201, 14, 14);
+}
+.four{
+    
+    color:rgb(184, 122, 9);
+    background-color: rgb(225, 200, 36);
+}
+.five{
+   
+    color:rgb(223, 223, 181);
+    background-color: rgb(225, 200, 36);
+}
+.six{
+    
+    color:rgb(90, 160, 90);
+    background-color: seagreen;
+}
+.seven{
+    
+    color:white;
+    background-color: seagreen;
+}
+.intro{
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+.iucnDoc{
+    
+    padding:1rem 2rem 1rem 4rem;
+    font-size: 20px;
+    background-color: #97B18E;
+    color: black;
+    font-weight: 700;
+    line-height: 3rem;
+    border-radius: 2rem;
+    
+}
