@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import photo1 from '../Assets/photo1.jpg';
 import photo2 from '../Assets/photo2.jpg';
 
-
 import './LetsBegin.css';
 function LetsBegin(){
     return(
