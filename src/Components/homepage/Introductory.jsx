@@ -6,7 +6,7 @@ import pic3 from '../Assets/pic3.jpg';
 import './Introductory.css';
 function Introductory(){
     return(
-        <div>
+        <div class="introAll">
             <div class="iOne " >
                 <div class="imagePart"><div class="pic1" ><img src={pic1} ></img></div></div>
                 <div class="textPart"></div>

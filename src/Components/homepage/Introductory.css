@@ -1,6 +1,8 @@
-.all{
-    
-    background-color: #f2efdc;
+.introAll{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-top:1rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -25,12 +27,14 @@
         
         display: flex;
     justify-content: space-between;
-  align-items: center;        
+  align-items: center;  
+  margin-bottom: 1rem;      
 }
 .iTwo{
     display: flex;
     justify-content: space-between;
   align-items: center;
+  margin-bottom: 1rem;
 }
 .iThree{
     display: flex;
