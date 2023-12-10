@@ -12,55 +12,135 @@
 }
 #part2{
   font-size: 25px;
-  padding-left: 55px;
+  padding-left: 2rem;
+  
 }
 .child2 {
   border: 5px;
-
+ 
 }
+p{
+  justify-content: center;
+  align-content:center;
+}
+
+
+/* Number */
+.number{
+  display: flex;
+    justify-content: space-between;
+  align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 25px;
+    color: #254C36;
+    
+    padding-bottom: 1rem;
+}
+
+/* Tiles with Image */
+
 .first{
   background-color: #254C36;
-  height: 4.5rem;
-  border: 5px white;
+  height: 5rem;
+  width:45rem;
+  margin-top: 1rem;
   color: whitesmoke;
-  border-radius: 100px;
+  border-radius: 25rem;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+   margin-bottom: 2rem;
     
+    overflow:hidden;
+    display: flex;;
 
 }
 .second{
   background-color: #254C36;
-  height: 4rem;
+  height: 5rem;
+  width:45rem;
   color: whitesmoke;
-  border-radius: 100px;
+  margin-bottom: 2rem;
+  border-radius: 25rem;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+   
+    display: flex;
 }
 .third{
   background-color: #254C36;
-  height: 4rem;
+  height: 5rem;
+  width:45rem;
   color: whitesmoke;
-  border-radius: 100px;
+  margin-bottom: 2rem;
+  border-radius: 25rem;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;}
+  sans-serif;
+
+display: flex;
+}
+  
+
+
+
+.textColor1{
+  font-size: 55px;
+  padding-left: 60px;
+  color:#254C36;
+}
+
+.photo{
+  height: 5rem;
+  width:28rem;
+  border-radius :25rem;
+  justify-content: center;
+  display:flex;
+  align-items: center;
+  overflow: hidden;
+  object-fit: scale-down;
+}
+.text{
+  padding-left:3rem;
+  padding-top: .5rem;
+  height: 4rem;
+  width: 22rem;
+  background-color: #254C36;
+  border-radius: 25rem;
+  display:flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  }
+
+/* Lets BeginButton */
 
 .letsbegin{
-  border-radius: 40% 0% 40% 0%;
+  border-radius: 1em 0% 1em 0%;
   width:200px;
   height: 60px;
   font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    font-size: 25px;
+    font-size: 1.5rem;
     background-color: #254C36;
     color: whitesmoke;
     
     
 }
+.letsButton{
+  /* align-items: center;
+  flex: auto;
+  padding-left: 40%;
+  padding-right: 40%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

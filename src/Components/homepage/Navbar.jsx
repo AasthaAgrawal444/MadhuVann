@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 
 function Navbar() {
   return (
+
     <div className="Flex_bar">
       <div>
         <img src={ham} height="20px" />
