@@ -1,7 +1,7 @@
 import React from "react";
-import animals from "./images/animals.jpeg";
-import flowers from "./images/flowers.jpeg";
-import clicks from "./images/click.jpeg";
+import animals from "../Assets/animals.jpeg";
+import flowers from "../Assets/flowers.jpeg";
+import clicks from "../Assets/click.jpeg";
 
 const GreenRectangleWithCircles = () => {
   const containerStyle = {
