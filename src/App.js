@@ -1,22 +1,23 @@
 import React from "react";
 import "./App.css";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./Components/homepage.js";
-import Donate from "./Components/donation/Donate.jsx"
+import Donate from "./Components/donation/Donate.jsx";
+import FloraFauna from "./Components/Florafauna.jsx";
 
 function App() {
   return (
-   <div>
-   <Router>
-    <Routes>
-    <Route path="/" exact element={<Homepage />}></Route>
-    <Route path="/Donate" exact element={<Donate />}></Route>
-
-
-    </Routes>
-   </Router>
-   </div>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" exact element={<Homepage />} />
+          <Route path="/Donate" exact element={<Donate />} />
+          <Route path="/florafauna" exact element={<FloraFauna />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
-export default App;
 
+export default App;
