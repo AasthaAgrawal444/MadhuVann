@@ -139,6 +139,22 @@ const GreenRectangleWithCircles = () => {
           Fauna
         </div>
       </div>
+      <style>
+        {`
+          @media (max-width: 768px) {
+            ${rectangleStyle}
+            ${mirroredRectangleStyle}
+            img {
+              height: 150px; 
+              width: 18px
+            ${smalrectangle}
+            ${smallerrectangles}
+            ${smalrectangleText}
+            ${secondsmallerrectangles}
+            // ... (additional styles for smaller screens)
+          }
+        `}
+      </style>
     </>
   );
 };
