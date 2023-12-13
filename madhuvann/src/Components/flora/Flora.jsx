@@ -1,5 +1,8 @@
 import React from 'react'
 import { cardData } from '../../utils'
+import Navbar from '../navbar/Navbar'
+import Card from '../card/Card'
+import stlyed from "./flora.module.css"
 
 const Flora = () => {
   return (
