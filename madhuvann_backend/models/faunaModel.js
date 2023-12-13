@@ -19,7 +19,7 @@ const faunaSchema = new mongoose.Schema({
     type: Number,
     required: [true, "Please enter quantity"],
   }, 
-  image: 
+  images: [
     {
       public_id: {
         type: String,
@@ -29,7 +29,8 @@ const faunaSchema = new mongoose.Schema({
         type: String,
         required: true,
       },
-    },
+    }
+  ],
   category: {
     type: String,
     required: [true, "Please enter category flora or fauna"],

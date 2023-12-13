@@ -4,87 +4,113 @@ const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const ApiFeatures = require("../utils/apifeatures");
 const cloudinary = require("../utils/cloudinary");
 
-
 //create florafauna
-exports.createFloraFauna = catchAsyncErrors(async (req, res, next)=>{
+exports.createFloraFauna = catchAsyncErrors(async (req, res, next) => {
+  const {
+    name,
+    scientificname,
+    description,
+    quantity,
+    image,
+    category,
+    iucntype,
+    iucndef,
+    location,
+    createdAt,
+  } = req.body;
 
-    const {name, scientificname, description, quantity, image, category, iucntype, iucndef, location, createdAt} = req.body;
+  let images = [];
+//   console.log({files:req.files.images});
+  if (typeof req.files.images === "string") {
+    images.push(req.files.images);
+  } else {
+    images = req.files.images;
+  }
 
+//   console.log(images);
+  const imagesLink = [];
+  images.forEach(async(element)=>{
+    console.log({element:element.tempFilePath});
+    const result = await cloudinary.uploader.upload(element.tempFilePath, {
+        folder: "florafaunas",
+      });
+      console.log({ result });  })
+//   for (let i = 0; i < images.length; i++) {
+//     console.log(i);
+//     const result = await cloudinary.uploader.upload(images[i].tempFilePath, {
+//       folder: "florafaunas",
+//     });
+//     console.log({ result });
+//     // const pid =result.public_id;
+//     // console.log({pid});
+//     imagesLink.push({
+//       public_id: result.public_id,
+//       url: result.secure_url,
+//     });
+//   }
+  const fauna = await Fauna.create({
+    name,
+    scientificname,
+    description,
+    quantity,
+    image: imagesLink,
+    category,
+    iucntype,
+    iucndef,
+    location,
+    createdAt,
+  });
 
-    const file = req.files.image;
-    console.log(file);
-    cloudinary.uploader.upload(file.tempFilePath,(err, result)=>{
-        console.log(result);
-    });
-
-    // const fauna = await Fauna.create({
-    //     name,
-    //     scientificname,
-    //     description,
-    //     quantity,
-    //     images: [{
-    //         public_id: result.public_id,
-    //         url: result.secure_url
-    //     },],
-    //     category,
-    //     iucntype,
-    //     iucndef,
-    //     location,
-    //     createdAt,
-    // });
-
-    res.status(201).json({
-        success:true,
-        fauna
-    })
+  res.status(201).json({
+    success: true,
+    fauna,
+  });
 });
 
 //Get all flora faunas
 
-exports.getallFaunas = catchAsyncErrors(async(req, res)=> {
-    const apiFeature = new ApiFeatures(Fauna.find(), req.query).search().filter();
-    const faunas = await apiFeature.query;
+exports.getallFaunas = catchAsyncErrors(async (req, res) => {
+  const apiFeature = new ApiFeatures(Fauna.find(), req.query).search().filter();
+  const faunas = await apiFeature.query;
 
-    res.status(200).json({
-        success:true,
-        faunas
-    });
+  res.status(200).json({
+    success: true,
+    faunas,
+  });
 });
-
 
 //Get details of one flora or fauna
 
-exports.getFaunaDetails = catchAsyncErrors(async(req, res, next)=>{
+exports.getFaunaDetails = catchAsyncErrors(async (req, res, next) => {
+  const fauna = await Fauna.findById(req.params.id);
 
-    const fauna = await Fauna.findById(req.params.id);
+  if (!fauna) {
+    return next(new ErrorHandler("Flora or Fauna not found", 400));
+  }
 
-    if(!fauna){
-        return next(new ErrorHandler("Flora or Fauna not found", 400));
-    }
-
-    res.status(200).json({
-        success:true,
-        fauna
-    })
+  res.status(200).json({
+    success: true,
+    fauna,
+  });
 });
 
 //Update florafauna details
 
-exports.updateFauna = catchAsyncErrors(async (req, res, next)=>{
-    let fauna = await Fauna.findById(req.params.id);
+exports.updateFauna = catchAsyncErrors(async (req, res, next) => {
+  let fauna = await Fauna.findById(req.params.id);
 
-    if(!fauna){
-        return next(new ErrorHandler("Flora or Fauna not found", 400));
-    }
+  if (!fauna) {
+    return next(new ErrorHandler("Flora or Fauna not found", 400));
+  }
 
-    fauna = await Fauna.findByIdAndUpdate(req.params.id, req.body, {
-        new: true,
-        runValidators: true,
-        useFindAndModify: false,
-      });
-    
-      res.status(200).json({
-        success: true,
-        fauna,
-      });
+  fauna = await Fauna.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true,
+    useFindAndModify: false,
+  });
+
+  res.status(200).json({
+    success: true,
+    fauna,
+  });
 });
