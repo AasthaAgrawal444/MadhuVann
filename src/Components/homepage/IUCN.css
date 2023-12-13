@@ -14,7 +14,7 @@
 }
 button{
     border: none;
-    color: white;
+    
     padding: 20px;
     text-align: center;
     text-decoration: none;
@@ -32,37 +32,37 @@ button{
     justify-content: space-between;
   align-items: center;
 }
-.one{
+.EX{
     
     color:red;
     background-color: black;
 }
-.two{
+.EW{
     
     color:white;
     background-color: black;
 }
-.three{
+.CR{
     
     color:rgb(228, 141, 141);
     background-color: rgb(201, 14, 14);
 }
-.four{
+.EN{
     
     color:rgb(184, 122, 9);
     background-color: rgb(225, 200, 36);
 }
-.five{
+.VU{
    
     color:rgb(223, 223, 181);
     background-color: rgb(225, 200, 36);
 }
-.six{
+.NT{
     
     color:rgb(90, 160, 90);
     background-color: seagreen;
 }
-.seven{
+.LC{
     
     color:white;
     background-color: seagreen;
@@ -72,14 +72,33 @@ button{
     font-weight: 300;
     
 }
-.iucnDoc{
-    
+.iucnBlock{
     padding:1rem 2rem 1rem 4rem;
-    font-size: 20px;
+
     background-color: #97B18E;
     color: black;
     font-weight: 700;
-    line-height: 3rem;
+   
     border-radius: 2rem;
+}
+#iuncHead{
+           font-size:80px;
+           text-align: center;
+            text-decoration: underline;
+}
+#iucnDoc{
+    
+    
+    font-size: 20px;
+    
+    font-weight: 700;
+    
     
 }
+@media screen and (max-width: 786px) {
+    .all{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+  }
+

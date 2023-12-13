@@ -1,8 +1,10 @@
 import React from "react";
-import Navbar from "../Components/homepage/Navbar";
+import Navbar from "./homepage/Navbar";
 import LetsBegin from "./homepage/LetsBegin";
 import Introductory from "./homepage/Introductory";
-import IUCN from "./homepage/IUCN"
+import IUCN from "./homepage/IUCN";
+import Florafauna from "./Florafauna";
+
 
 function Homepage() {
   return (
@@ -14,6 +16,8 @@ function Homepage() {
 
 
       <IUCN/>
+      <Florafauna/>
+      
     </div>
   );
 }
