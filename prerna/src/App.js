@@ -1,6 +1,7 @@
 import styled from "./app.module.css";
 import Card from "./components/Card/Card";
 import Navbar from "./components/Navbar/Navbar";
+
 import { cardData } from "./utils";
 
 const App = () => {

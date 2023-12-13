@@ -16,7 +16,11 @@ const Navbar = () => {
         </div>
         <div className={styles.nav_box3}>
           <div className={styles.nav_search_con}>
-            <input type="text" placeholder="Search here..." />
+            <input
+              type="text"
+              placeholder="Search here..."
+              className={styles.nav_search_con_input}
+            />
             <span>
               <CiSearch color="#fff" className={styles.search_icon_size} />
             </span>

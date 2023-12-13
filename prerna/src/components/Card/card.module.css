@@ -1,5 +1,5 @@
 .card_wrapper {
-  width: 22rem;
+  width: 16rem;
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
@@ -18,16 +18,16 @@
 .card_img_cont {
   border: 12px solid;
   border-radius: 50%;
-  width: 18rem;
-  height: 18rem;
+  width: 12rem;
+  height: 12rem;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  img {
-    overflow: hidden;
-  }
+.card_img_cont img {
+  overflow: hidden;
 }
 
 .card_box2 {
