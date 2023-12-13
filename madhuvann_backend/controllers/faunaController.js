@@ -35,19 +35,7 @@ exports.createFloraFauna = catchAsyncErrors(async (req, res, next) => {
         folder: "florafaunas",
       });
       console.log({ result });  })
-//   for (let i = 0; i < images.length; i++) {
-//     console.log(i);
-//     const result = await cloudinary.uploader.upload(images[i].tempFilePath, {
-//       folder: "florafaunas",
-//     });
-//     console.log({ result });
-//     // const pid =result.public_id;
-//     // console.log({pid});
-//     imagesLink.push({
-//       public_id: result.public_id,
-//       url: result.secure_url,
-//     });
-//   }
+
   const fauna = await Fauna.create({
     name,
     scientificname,
