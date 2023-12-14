@@ -1,5 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import "./IUCN.css";
+import iucn from "../Assets/Group 164.png";
 
 function IUCN() {
   return (
@@ -16,10 +17,25 @@ function IUCN() {
         geographic distribution, to determine a species' category, making the
         Red List an invaluable resource for informing conservation strategies.
       </p>
-      <div className="bg">
+      <img className="scale" src={iucn} style={{ maxWidth: "90vw" }} />
+      <div className="bg" style={{ textAlign: "center" }}>
         <Carousel data-bs-theme="dark">
-          <Carousel.Item>
-            <h1>EX</h1>
+          <Carousel.Item className="center">
+            <div className="center">
+              <h1
+                style={{
+                  height: "1.5em",
+                  width: "1.5em",
+                  background: "red",
+                  margin: "auto",
+                  borderRadius: "50%",
+                  fontSize: "3em",
+                  paddingTop: ".25em",
+                }}
+              >
+                EX
+              </h1>
+            </div>
             <h3>Extinct</h3>
             <p className="text2">
               In the IUCN Red List, the category "EX" signifies extinction. This

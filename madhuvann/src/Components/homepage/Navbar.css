@@ -2,6 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+}
+.logo {
+  width: 20em;
+}
+.ham {
+  width: 2em;
 }
 .button {
   background-color: #97b18e;
@@ -14,10 +23,17 @@
   text-align: center;
   justify-content: center;
 }
+button {
+  border: none;
+  background-color: #97b18e;
+  border-radius: 50%;
+  width: 5em;
+}
 .donate_icon {
   background-color: #97b18e;
-  width: 3rem;
-  height: 2.4rem;
+  /* width: 3rem;
+  height: 2.4rem; */
+  height: 1.5em;
 }
 .donate {
   display: flex;
@@ -33,5 +49,7 @@
 }
 .button {
   display: flex;
+
+  height: 3em;
   align-content: center;
 }

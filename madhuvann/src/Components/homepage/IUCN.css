@@ -5,6 +5,9 @@
   padding-top: 5rem;
   text-align: center;
 }
+.center {
+  text-align: center;
+}
 
 .text1 {
   font-family: "Alegreya Sans";
@@ -24,4 +27,10 @@
   border-radius: 2em;
   text-align: center;
   margin-bottom: 2em;
+}
+
+@media (max-width: 767px) {
+  .scale {
+    height: 1.7em;
+  }
 }

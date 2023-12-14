@@ -1,139 +1,129 @@
 .flex-parent {
-    display: flex;
-  }
-  .flex-child {
-    flex: 1;
-  }
+  display: flex;
+}
+.flex-child {
+  flex: 1;
+}
 
-#part1{
+#part1 {
   font-size: 55px;
   padding-left: 60px;
-  
 }
-#part2{
+#part2 {
   font-size: 25px;
   padding-left: 2rem;
-  
 }
 .child2 {
   border: 5px;
- 
 }
-p{
+p {
   justify-content: center;
-  align-content:center;
+  align-content: center;
 }
-
 
 /* Number */
-.number{
+.number {
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    font-size: 25px;
-    color: #254C36;
-    
-    padding-bottom: 1rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  font-size: 25px;
+  color: #254c36;
+
+  padding-bottom: 1rem;
 }
 
 /* Tiles with Image */
 
-.first{
-  background-color: #254C36;
+.first {
+  background-color: #254c36;
   height: 5rem;
-  width:45rem;
+  width: 45rem;
   margin-top: 1rem;
   color: whitesmoke;
   border-radius: 25rem;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-   margin-bottom: 2rem;
-    
-    overflow:hidden;
-    display: flex;;
+  font-family: -apple-system, BlinkMacSystemFont, "Alegreya Sans", "Amaranth",
+    "DM Serif Display", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: 2rem;
 
+  overflow: hidden;
+  display: flex;
 }
-.second{
-  background-color: #254C36;
+.second {
+  background-color: #254c36;
   height: 5rem;
-  width:45rem;
+  width: 45rem;
   color: whitesmoke;
   margin-bottom: 2rem;
   border-radius: 25rem;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-   
-    display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Alegreya Sans", "Amaranth",
+    "DM Serif Display", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  display: flex;
 }
-.third{
-  background-color: #254C36;
+.third {
+  background-color: #254c36;
   height: 5rem;
-  width:45rem;
+  width: 45rem;
   color: whitesmoke;
   margin-bottom: 2rem;
   border-radius: 25rem;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Alegreya Sans", "Amaranth",
+    "DM Serif Display", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
-display: flex;
+  display: flex;
 }
-  
 
-
-
-.textColor1{
+.textColor1 {
   font-size: 55px;
   padding-left: 60px;
-  color:#254C36;
+  color: #254c36;
 }
 
-.photo{
+.photo {
   height: 5rem;
-  width:28rem;
-  border-radius :25rem;
+  width: 28rem;
+  border-radius: 25rem;
   justify-content: center;
-  display:flex;
+  display: flex;
   align-items: center;
   overflow: hidden;
   object-fit: scale-down;
 }
-.text{
-  padding-left:3rem;
-  padding-top: .5rem;
+.text {
+  padding-left: 3rem;
+  padding-top: 0.5rem;
   height: 4rem;
   width: 22rem;
-  background-color: #254C36;
+  background-color: #254c36;
   border-radius: 25rem;
-  display:flex;
+  display: flex;
   align-items: center;
   text-align: center;
   font-size: 1.2rem;
-  }
+}
 
 /* Lets BeginButton */
 
-.letsbegin{
+.letsbegin {
   border-radius: 1em 0% 1em 0%;
-  width:200px;
+  width: 200px;
   height: 60px;
-  font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Serif Display' ,'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    font-size: 1.5rem;
-    background-color: #254C36;
-    color: whitesmoke;
-    
-    
+  font-family: -apple-system, BlinkMacSystemFont, "Alegreya Sans", "Amaranth",
+    "DM Serif Display", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  background-color: #254c36;
+  color: whitesmoke;
 }
-.letsButton{
+.letsButton {
   /* align-items: center;
   flex: auto;
   padding-left: 40%;
@@ -143,4 +133,8 @@ display: flex;
   align-items: center;
 }
 
-
+@media (max-width: 767px) {
+  .flex-parent {
+    flex-direction: column;
+  }
+}
