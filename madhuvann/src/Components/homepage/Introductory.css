@@ -64,7 +64,7 @@ align-items: center;
   float: right;
   text-align: right;
 } 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 1024px) {
   .introAll{
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -78,7 +78,7 @@ align-items: center;
       border-radius: 25rem;
       margin-left: 0.8rem;
       margin-right: 0.8rem;
-      font-size: 1rem;
+      font-size: 1.3rem;
       font-weight: 900;
       padding:2rem 1rem 0rem 1rem;
       align-items: center;
@@ -96,8 +96,9 @@ align-items: center;
  .imagePart{
   width: 11.5rem; height: 11.5rem;
   overflow: hidden;
-   border-radius: 50%;
+   border-radius: 90%;
   display:inline-flex;
+  /* background-color:#F2EFDC; */
 }
 }
 
