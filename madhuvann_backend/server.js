@@ -1,6 +1,6 @@
 const app = require("./app");
 
-const dotenv = require("dotenv")
+require("dotenv").config()
 const dbConnect = require("./config/databse")
 
 //handling uncaught exceptions
@@ -10,7 +10,7 @@ process.on("uncaughtException",(err)=>{
     process.exit(1);
 });
 
-dotenv.config({path:"config/config.env"});
+// dotenv.config({path:"config/config.env"});
 
 dbConnect();
 

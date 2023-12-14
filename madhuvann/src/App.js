@@ -7,7 +7,6 @@ import Donate from "./Components/donation/Donate.jsx";
 import FloraFauna from "./Components/Florafauna.jsx";
 import Flora from "./Components/flora/Flora.jsx";
 
-
 function App() {
   return (
     <div>
