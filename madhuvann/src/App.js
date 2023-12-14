@@ -7,6 +7,7 @@ import Donate from "./Components/donation/Donate.jsx";
 import FloraFauna from "./Components/Florafauna.jsx";
 import Flora from "./Components/flora/Flora.jsx";
 
+
 function App() {
   return (
     <div>
@@ -17,6 +18,8 @@ function App() {
           <Route path="/florafauna" exact element={<FloraFauna />} />
           <Route path="/FloraFaunaCards" exact element={<Flora />} />
           <Route path='/flora' exact element={<Flora />} />
+          
+
         </Routes>
       </Router>
     </div>
