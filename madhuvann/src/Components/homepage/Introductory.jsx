@@ -4,6 +4,7 @@ import pic2 from "../Assets/pic2.jpg";
 import pic3 from "../Assets/pic3.jpg";
 
 import "./Introductory.css";
+
 function Introductory() {
   return (
     <div class="introAll">

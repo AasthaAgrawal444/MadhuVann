@@ -1,7 +1,7 @@
 import React from "react";
-import animals from "./images/animals.jpeg";
-import flowers from "./images/flowers.jpeg";
-import clicks from "./images/click.jpeg";
+import animals from "../Assets/animals.jpeg";
+import flowers from "../Assets/flowers.jpeg";
+import clicks from "../Assets/click.jpeg";
 
 const GreenRectangleWithCircles = () => {
   const containerStyle = {
@@ -13,8 +13,8 @@ const GreenRectangleWithCircles = () => {
 
   const rectangleStyle = {
     position: "relative",
-    width: "800px",
-    height: "300px",
+    width: "900px",
+    height: "350px",
     backgroundColor: "#254C36",
     margin: "0 20px",
     borderRadius: "0 50rem 50rem 0",
@@ -100,7 +100,7 @@ const GreenRectangleWithCircles = () => {
               position: "absolute",
               top: "50%",
               transform: "translateY(-50%)",
-              right: "5px",
+              right: "22px",
             }}
           />
         </div>
@@ -113,7 +113,7 @@ const GreenRectangleWithCircles = () => {
               position: "absolute",
               top: "50%",
               transform: "translateY(-50%)",
-              right: "5px",
+              right: "22px",
             }}
           />
         </div>
@@ -139,6 +139,22 @@ const GreenRectangleWithCircles = () => {
           Fauna
         </div>
       </div>
+      <style>
+        {`
+          @media (max-width: 768px) {
+            ${rectangleStyle}
+            ${mirroredRectangleStyle}
+            img {
+              height: 150px; 
+              width: 18px
+            ${smalrectangle}
+            ${smallerrectangles}
+            ${smalrectangleText}
+            ${secondsmallerrectangles}
+            // ... (additional styles for smaller screens)
+          }
+        `}
+      </style>
     </>
   );
 };
