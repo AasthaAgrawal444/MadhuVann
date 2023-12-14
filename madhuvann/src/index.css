@@ -34,5 +34,7 @@ code {
 .card-shadow {
   -webkit-box-shadow: 10px 10px 7px 3px rgba(154, 155, 171, 1);
   -moz-box-shadow: 10px 10px 7px 3px rgba(154, 155, 171, 1);
-  box-shadow: 10px 10px 7px 3px rgba(154, 155, 171, 1);
+
+  box-shadow: 10px 10px 7px 3px rgba(154,155,171,1);
 }
+
