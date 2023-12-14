@@ -20,3 +20,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-primary: #97b18e;
+  --green-secondary: #166534;
+  --card-img-border: #d65252;
+  --gray-primary: #6b7280;
+}
+.card-shadow {
+  -webkit-box-shadow: 10px 10px 7px 3px rgba(154, 155, 171, 1);
+  -moz-box-shadow: 10px 10px 7px 3px rgba(154, 155, 171, 1);
+  box-shadow: 10px 10px 7px 3px rgba(154,155,171,1);
+}

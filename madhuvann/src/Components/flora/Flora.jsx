@@ -1,6 +1,6 @@
 import React from 'react'
 import { cardData } from '../../utils'
-import Navbar from '../homepage/Navbar'
+import Navbar from '../navbar/navbar'
 import Card from '../card/Card'
 import "./flora.css"
 
