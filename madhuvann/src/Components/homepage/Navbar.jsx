@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="Flex_bar">
-      <div>
+      <div className="nav">
         <img className="ham" src={ham} />
       </div>
       <div>

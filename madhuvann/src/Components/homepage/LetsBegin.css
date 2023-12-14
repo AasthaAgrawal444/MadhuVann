@@ -1,21 +1,27 @@
-.flex-parent {
+.parent {
   display: flex;
+  justify-content: space-evenly;
 }
-.flex-child {
-  flex: 1;
+
+.child {
+  flex-basis: auto;
+}
+.image {
+  max-width: 50vw;
+  padding-bottom: 1.5em;
 }
 
 #part1 {
-  font-size: 55px;
-  padding-left: 60px;
+  font-size: 4vw;
+  padding-left: 3rem;
+  padding-right: 1rem;
 }
 #part2 {
-  font-size: 25px;
-  padding-left: 2rem;
+  font-size: 1.75vw;
+  padding-left: 3rem;
+  padding-right: 1rem;
 }
-.child2 {
-  border: 5px;
-}
+
 p {
   justify-content: center;
   align-content: center;
@@ -28,7 +34,7 @@ p {
   align-items: center;
   padding-left: 10rem;
   padding-right: 10rem;
-  font-size: 25px;
+  font-size: 2vw;
   color: #254c36;
 
   padding-bottom: 1rem;
@@ -36,86 +42,19 @@ p {
 
 /* Tiles with Image */
 
-.first {
-  background-color: #254c36;
-  height: 5rem;
-  width: 45rem;
-  margin-top: 1rem;
-  color: whitesmoke;
-  border-radius: 25rem;
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Alegreya Sans", "Amaranth",
-    "DM Serif Display", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  margin-bottom: 2rem;
-
-  overflow: hidden;
-  display: flex;
-}
-.second {
-  background-color: #254c36;
-  height: 5rem;
-  width: 45rem;
-  color: whitesmoke;
-  margin-bottom: 2rem;
-  border-radius: 25rem;
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Alegreya Sans", "Amaranth",
-    "DM Serif Display", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-
-  display: flex;
-}
-.third {
-  background-color: #254c36;
-  height: 5rem;
-  width: 45rem;
-  color: whitesmoke;
-  margin-bottom: 2rem;
-  border-radius: 25rem;
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Alegreya Sans", "Amaranth",
-    "DM Serif Display", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-
-  display: flex;
-}
-
 .textColor1 {
   font-size: 55px;
   padding-left: 60px;
   color: #254c36;
 }
 
-.photo {
-  height: 5rem;
-  width: 28rem;
-  border-radius: 25rem;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  object-fit: scale-down;
-}
-.text {
-  padding-left: 3rem;
-  padding-top: 0.5rem;
-  height: 4rem;
-  width: 22rem;
-  background-color: #254c36;
-  border-radius: 25rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 1.2rem;
-}
-
 /* Lets BeginButton */
 
 .letsbegin {
   border-radius: 1em 0% 1em 0%;
-  width: 200px;
-  height: 60px;
+  width: 8rem;
+  height: 3rem;
+
   font-family: -apple-system, BlinkMacSystemFont, "Alegreya Sans", "Amaranth",
     "DM Serif Display", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -133,8 +72,34 @@ p {
   align-items: center;
 }
 
-@media (max-width: 767px) {
-  .flex-parent {
+@media (max-width: 800px) {
+  .parent {
     flex-direction: column;
+    align-items: center;
+  }
+  .image {
+    max-width: 90vw;
+  }
+
+  #part1 {
+    font-size: 3rem;
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+  #part2 {
+    font-size: 1rem;
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+  .number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    font-size: 5vw;
+    color: #254c36;
+
+    padding-bottom: 1rem;
   }
 }
