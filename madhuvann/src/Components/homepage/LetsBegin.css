@@ -42,8 +42,8 @@ align-items: center;
 
 .first{
 background-color: #254C36;
-height: 5rem;
-width:45rem;
+max-height: 5rem;
+max-width:45rem;
 margin-top: 1rem;
 color: whitesmoke;
 border-radius: 25rem;
@@ -60,8 +60,8 @@ font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Se
 }
 .second{
 background-color: #254C36;
-height: 5rem;
-width:45rem;
+max-height: 5rem;
+max-width:45rem;
 color: whitesmoke;
 margin-bottom: 2rem;
 border-radius: 25rem;
@@ -75,8 +75,8 @@ font-family: -apple-system, BlinkMacSystemFont,'Alegreya Sans','Amaranth','DM Se
 }
 .third{
 background-color: #254C36;
-height: 5rem;
-width:45rem;
+max-height: 5rem;
+max-width:45rem;
 color: whitesmoke;
 margin-bottom: 2rem;
 border-radius: 25rem;
@@ -99,8 +99,8 @@ color:#254C36;
 }
 
 .photo{
-height: 5rem;
-width:28rem;
+max-height: 5rem;
+max-width:28rem;
 border-radius :25rem;
 justify-content: center;
 display:flex;
@@ -147,9 +147,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 1024px) {
   .flex-parent {
     display: inline;
+    justify-content: center;
   }
   .flex-child {
     flex: 1;
@@ -168,6 +169,9 @@ align-items: center;
       }
     .number{
       padding:0.2rem 5.5rem 0rem 5.5rem;
+    }
+    .child2{
+      padding: 1rem 8rem;
     }
   }
 
