@@ -12,12 +12,16 @@ const Footer = () => {
 
       <div style={styles.socialMedia}>
         <h2 style={styles.heading}>Social Media:</h2>
-        {/* Add your social media icons/links here */}
+        <p>Facebook</p>
+        <p>Instagram</p>
+        <p>X</p>
       </div>
 
       <div style={styles.sitemap}>
         <h2 style={styles.heading}>Sitemap:</h2>
-        {/* Add your sitemap links here */}
+        <p>Donate</p>
+        <p>Flora</p>
+        <p>Fauna</p>
       </div>
     </footer>
   );
@@ -27,7 +31,7 @@ const styles = {
   footerContainer: {
     display: "flex",
     justifyContent: "space-around",
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#97b18e",
     padding: "20px",
     color: "#333",
     marginTop: "20px",
@@ -44,11 +48,12 @@ const styles = {
     flex: 1,
   },
   heading: {
+    color: "#254c36",
     fontFamily: "DM Serif Display",
     fontWeight: "bold",
   },
   // Media Query for mobile screens
-  "@media (max-width: 768px)": {
+  "@media (max-width: 800px)": {
     footerContainer: {
       flexDirection: "column",
       alignItems: "center",

@@ -7,16 +7,16 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="Flex_bar">
-      <div>
-        <img src={ham} height="20px" />
+      <div className="nav">
+        <img className="ham" src={ham} />
       </div>
       <div>
-        <img src={logo} height="95px"></img>
+        <img className="logo" src={logo}></img>
       </div>
       <div className="button">
         <Link to="/Donate">
           <button>
-            <img className="donate_icon" src={donate} height="35px" />
+            <img className="donate_icon" src={donate} />
             <div className="button_label"> Donate</div>
           </button>
         </Link>
