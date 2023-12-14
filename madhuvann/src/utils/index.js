@@ -22,4 +22,11 @@ export const cardData = [
     borderColor: "#cccccc",
     img: elephant,
   },
+  {
+    id: 4,
+    title: "African Elephant",
+    subtitle: "Laxodanta Africana",
+    borderColor: "#dfe",
+    img: elephant,
+  },
 ];
