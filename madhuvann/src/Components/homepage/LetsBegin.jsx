@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import photo1 from '../Assets/photo1.jpg';
 import photo2 from '../Assets/photo2.jpg';
+import { Link } from "react-router-dom";
 
 import './LetsBegin.css';
 function LetsBegin(){
@@ -35,7 +36,9 @@ function LetsBegin(){
                 
                 </div>
                 
-                <div class="letsButton"><button class="letsbegin">Let's Begin</button></div>
+                <div class="letsButton">
+                   <Link to='/FloraFaunaCards'> <button class="letsbegin">Let's Begin</button></Link>
+                    </div>
             </div>
         </div>
         
