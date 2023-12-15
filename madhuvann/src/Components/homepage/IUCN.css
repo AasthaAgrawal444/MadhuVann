@@ -29,14 +29,13 @@
   margin-bottom: 2em;
 }
 
-
 @media screen and (max-width: 786px) {
-   .scale {
+  .scale {
     height: 1.7em;
-  .carousel {
-    margin-top: 0.5rem;
-    padding-top: 1rem;
-    text-align: center;
-
+    .carousel {
+      margin-top: 0.5rem;
+      padding-top: 1rem;
+      text-align: center;
+    }
   }
 }

@@ -1,20 +1,30 @@
-import "./card.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Card = ({ title, borderColor, subtitle, img }) => {
+const Card = ({ id, name, scientificname, category, images }) => {
+  // Assuming there are always images available, directly access the first one's URL
+  const firstImageUrl = images[0].url;
+
   return (
-    <div className={`card_wrapper card-shadow`}>
-      <div className={"card_box1"}>
-        <div
-          style={{ borderColor: borderColor }}
-          className={"card_img_cont"}
-        >
-          <img src={img} alt="" className="rounded-full overflow-hidden " />
-        </div>
-      </div>
-      <div className={"card_box2"}>
-        <span className={"title"}>{title}</span>
-        <span className={"subtitle"}>{subtitle}</span>
-      </div>
+    <div
+      style={{
+        border: "1px solid #ccc",
+        padding: "10px",
+        margin: "10px",
+        width: "20rem",
+      }}
+    >
+      {" "}
+      <Link
+        style={{ color: "black", textDecoration: "none" }}
+        to={`/details/${id}`}
+      >
+        <h3>{name}</h3>
+        <p>{scientificname}</p>
+        <p>Category: {category}</p>
+
+        <img src={firstImageUrl} alt={name} style={{ maxWidth: "100%" }} />
+      </Link>
     </div>
   );
 };

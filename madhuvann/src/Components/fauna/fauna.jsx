@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../homepage/Navbar";
 import Card from "../card/Card";
 
-const CardList = () => {
+const FaunaCardList = () => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const CardList = () => {
         const { faunas } = await response.json(); // Destructure the 'faunas' property directly
 
         // Filter cards based on the category being "Flora"
-        const floraCards = faunas.filter((fauna) => fauna.category === "Flora");
+        const floraCards = faunas.filter((fauna) => fauna.category === "Fauna");
         setCards(floraCards);
       } catch (error) {
         console.error("Error fetching card information:", error.message);
@@ -48,4 +48,4 @@ const CardList = () => {
   );
 };
 
-export default CardList;
+export default FaunaCardList;
