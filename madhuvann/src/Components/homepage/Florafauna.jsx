@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import animals from "../Assets/animals.jpeg";
 import flowers from "../Assets/flowers.jpeg";
 import clicks from "../Assets/click.jpeg";
+import Album from "./Album";
 
 const GreenRectangleWithCircles = () => {
   const containerStyle = {
@@ -71,14 +72,18 @@ const GreenRectangleWithCircles = () => {
     transform: "scaleX(-1)",
     borderRadius: "0 50rem 50rem 0",
   };
+  const [value, setvalue] = useState("flora");
 
-  const handleSmallerRectanglesClick = () => {
-    console.log("Smaller Rectangles Clicked");
-  };
+  // const handleSmallerRectanglesClick = () => {
+  //     (e) => {
+  //       setvalue(e.target.value);
+  //       console.log("Mirrored Smaller Rectangles Clicked");
+  //     }
+  // };
 
-  const handleMirroredSmallerRectanglesClick = () => {
-    console.log("Mirrored Smaller Rectangles Clicked");
-  };
+  // const handleMirroredSmallerRectanglesClick = () => {
+  //   console.log("Mirrored Smaller Rectangles Clicked");
+  // };
 
   const smalrectangleText = {
     fontFamily: "DM Serif Display",
@@ -119,10 +124,14 @@ const GreenRectangleWithCircles = () => {
         </div>
       </div>
 
+      <Album value={value} />
       <div style={smalrectangle}>
         <div
           style={{ ...smallerrectangles, ...smalrectangleText }}
-          onClick={handleSmallerRectanglesClick}
+          onClick={(e) => {
+            setvalue(e.currentTarget.textContent);
+            console.log(e.currentTarget.textContent);
+          }}
         >
           Flora
         </div>
@@ -134,11 +143,15 @@ const GreenRectangleWithCircles = () => {
         />
         <div
           style={{ ...secondsmallerrectangles, ...smalrectangleText }}
-          onClick={handleMirroredSmallerRectanglesClick}
+          onClick={(e) => {
+            setvalue(e.currentTarget.textContent);
+            console.log(e.currentTarget.textContent);
+          }}
         >
           Fauna
         </div>
       </div>
+      <Album value={value} />
       <style>
         {`
           @media (max-width: 768px) {

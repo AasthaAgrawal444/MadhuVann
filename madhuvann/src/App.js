@@ -4,7 +4,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./Components/homepage.js";
 import Donate from "./Components/donation/Donate.jsx";
-import FloraFauna from "./Components/florafauna/Florafauna.jsx";
+import FloraFauna from "./Components/homepage/Florafauna.jsx";
 
 function App() {
   return (
