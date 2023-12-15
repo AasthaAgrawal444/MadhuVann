@@ -19,7 +19,7 @@ exports.createFloraFauna = catchAsyncErrors(async (req, res, next) => {
       const result = await cloudinary.uploader.upload(element.tempFilePath, {
         folder: "florafaunas",
       });
-      console.log("JDLSFJ");
+      // console.log("JDLSFJ");
       console.log(result.public_id);
 
       // Push an object with public_id and url properties into imagesLink
@@ -30,8 +30,8 @@ exports.createFloraFauna = catchAsyncErrors(async (req, res, next) => {
     })
   );
 
-  console.log("KLDSJFJ");
-  console.log(imagesLink);
+  // console.log("KLDSJFJ");
+  // console.log(imagesLink);
 
   req.body.images = imagesLink;
 

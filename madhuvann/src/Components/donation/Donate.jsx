@@ -15,6 +15,7 @@ const Donate = () => {
                 image={NgoList.image}
                 name={NgoList.name}
                 description={NgoList.description}
+                url={NgoList.url}
             />
         ))
         }
