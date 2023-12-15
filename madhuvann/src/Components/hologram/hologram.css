@@ -1,9 +1,8 @@
-body {
-  margin: 1em;
+.page {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
+  height: 100vh;
   background-color: black;
 }
 
@@ -14,7 +13,7 @@ body {
   background-color: black;
 }
 
-img {
+.holoimage {
   width: 12em;
   height: 12em;
   background-size: cover;
