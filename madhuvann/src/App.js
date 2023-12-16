@@ -25,6 +25,7 @@ function App() {
           <Route path="/IUCN" exact element={<IucnPage />} />
           <Route path="/details/:id" element={<DetailedPage />} />
           <Route path="/holo/:id" element={<Holo />} />
+          <Route path="/description" element={<DetailedPage />} />
         </Routes>
       </Router>
     </div>

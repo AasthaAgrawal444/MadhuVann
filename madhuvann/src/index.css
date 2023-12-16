@@ -35,6 +35,19 @@ code {
   -webkit-box-shadow: 10px 10px 7px 3px rgba(154, 155, 171, 1);
   -moz-box-shadow: 10px 10px 7px 3px rgba(154, 155, 171, 1);
 
-  box-shadow: 10px 10px 7px 3px rgba(154,155,171,1);
+  box-shadow: 10px 10px 7px 3px rgba(154, 155, 171, 1);
 }
 
+.player {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.player-button {
+  display: inline-flex;
+  flex-direction: row;
+  width: 3rem;
+  height: 3rem;
+}
