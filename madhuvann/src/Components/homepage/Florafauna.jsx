@@ -151,7 +151,6 @@ const GreenRectangleWithCircles = () => {
           </div>
         </Link>
       </div>
-      <Album value={value} />
       <style>
         {`
           @media (max-width: 768px) {

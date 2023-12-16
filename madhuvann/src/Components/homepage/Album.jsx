@@ -3,7 +3,7 @@ import Card from "../card/Card.jsx";
 import axios from "axios";
 // import "./album.css";
 
-const baseURL = "http://localhost:6000/api/v1/faunas";
+const baseURL = "http://localhost:4000/api/v1/faunas";
 
 const Album = (prop) => {
   console.log(prop.value);

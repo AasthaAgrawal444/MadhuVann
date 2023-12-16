@@ -42,7 +42,6 @@ const DetailedPage = () => {
     return <div>Error loading detailed information.</div>;
   }
 
-  const image1 = detailedInfo.images[0].url;
   const image2 = detailedInfo.images[1].url;
 
   return (
@@ -63,17 +62,127 @@ const DetailedPage = () => {
           style={{ maxWidth: "70vw", textAlign: "center" }}
         />
       </div>
-      <h1>{detailedInfo.name}</h1>
-      <TextToSpeechToggle textToRead={detailedInfo.description} />
-      <Link to={`/holo/${id}`}>holo</Link>
-      <p>Scientific Name: {detailedInfo.scientificname}</p>
-      <p>Description: {detailedInfo.description}</p>
 
-      <p>Quantity: {detailedInfo.quantity}</p>
-      <p>Category: {detailedInfo.category}</p>
-      <p>IUCN Type: {detailedInfo.iucntype}</p>
-      <p>IUCN Definition: {detailedInfo.iucndef}</p>
-      <p>Location: {detailedInfo.location}</p>
+      <h1
+        style={{
+          width: "80vw",
+          margin: "auto",
+          textAlign: "center",
+          borderRadius: "4rem",
+          padding: "1.5rem",
+        }}
+      >
+        {detailedInfo.name}
+      </h1>
+      <TextToSpeechToggle textToRead={detailedInfo.description} />
+
+      {/* Styling for Quantity, IUCN type, and Population */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          marginTop: "1rem",
+        }}
+      >
+        <div
+          style={{
+            width: "30vw",
+            margin: "1rem",
+            borderRadius: "1rem",
+            backgroundColor: "rgba(255, 255, 255, 0.7)",
+          }}
+        >
+          <p>Quantity: {detailedInfo.quantity}</p>
+        </div>
+        <div
+          style={{
+            width: "30vw",
+            margin: "1rem",
+            borderRadius: "1rem",
+            backgroundColor: "rgba(255, 255, 255, 0.7)",
+          }}
+        >
+          <p>IUCN Type: {detailedInfo.iucntype}</p>
+        </div>
+        <div
+          style={{
+            width: "30vw",
+            margin: "1rem",
+            borderRadius: "1rem",
+            backgroundColor: "rgba(255, 255, 255, 0.7)",
+          }}
+        >
+          <p>Population: {detailedInfo.population}</p>
+        </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          marginTop: "1rem",
+        }}
+      >
+        <div
+          style={{
+            width: "30vw",
+            margin: "1rem",
+            borderRadius: "1rem",
+            backgroundColor: "rgba(255, 255, 255, 0.7)",
+          }}
+        >
+          <p style={{ margin: "0.5rem 0" }}>
+            Scientific Name: {detailedInfo.scientificname}
+          </p>
+        </div>
+        <div
+          style={{
+            width: "30vw",
+            margin: "1rem",
+            borderRadius: "1rem",
+            backgroundColor: "rgba(255, 255, 255, 0.7)",
+          }}
+        >
+          <p style={{ margin: "0.5rem 0" }}>
+            IUCN Definition: {detailedInfo.iucndef}
+          </p>
+        </div>
+        <div
+          style={{
+            width: "30vw",
+            margin: "1rem",
+            borderRadius: "1rem",
+            backgroundColor: "rgba(255, 255, 255, 0.7)",
+          }}
+        >
+          <p style={{ margin: "0.5rem 0" }}>
+            Location: {detailedInfo.location}
+          </p>
+        </div>
+      </div>
+
+      {/* Styling for Description */}
+      <div
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.7)",
+          borderRadius: "1rem",
+          padding: "1rem",
+          margin: "1rem",
+        }}
+      >
+        <p>Description: {detailedInfo.description}</p>
+      </div>
+
+      {/* Buttons with images */}
+      <Link to={`/holo/${id}`}>
+        <button style={{ backgroundImage: "url(path/to/button-image1.png)" }}>
+          {/* Add any additional styling for the button */}
+        </button>
+      </Link>
+      <button style={{ backgroundImage: "url(path/to/button-image2.png)" }}>
+        {/* Add any additional styling for the button */}
+      </button>
+
+      {/* Additional details with margin */}
     </div>
   );
 };
