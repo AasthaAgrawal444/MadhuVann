@@ -1,0 +1,14 @@
+.fauna_card_container {
+    max-width: 75rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  
+  .fauna_container {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+  }
