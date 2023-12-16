@@ -1,31 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./card.css";
 
 const Card = ({ id, name, scientificname, category, images }) => {
   // Assuming there are always images available, directly access the first one's URL
   const firstImageUrl = images[0].url;
 
   return (
-    <div
-      style={{
-        border: "1px solid #ccc",
-        padding: "10px",
-        margin: "10px",
-        width: "20rem",
-      }}
-    >
-      {" "}
-      <Link
-        style={{ color: "black", textDecoration: "none" }}
-        to={`/details/${id}`}
-      >
-        <h3>{name}</h3>
-        <p>{scientificname}</p>
-        <p>Category: {category}</p>
-
-        <img src={firstImageUrl} alt={name} style={{ maxWidth: "100%" }} />
-      </Link>
-    </div>
+    <Link className="card_wrapper card-shadow" to={`/details/${id}`}>
+      <div className="card_box1">
+        <div className="card_img_cont">
+          <img src={firstImageUrl} alt={name} />
+        </div>
+      </div>
+      <div className="card_box2">
+        <h3 className="title">{name}</h3>
+        <p className="subtitle">{scientificname}</p>
+        <p className="subtitle">Category: {category}</p>
+      </div>
+    </Link>
   );
 };
 

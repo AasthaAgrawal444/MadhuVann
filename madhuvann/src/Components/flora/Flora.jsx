@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../homepage/Navbar";
+import React, { useEffect, useState } from "react";
 import Card from "../card/Card";
+import Navbar from "../homepage/Navbar";
+import "./flora.css";
 
 const CardList = () => {
   const [cards, setCards] = useState([]);
@@ -13,13 +13,16 @@ const CardList = () => {
         const response = await fetch("http://localhost:4000/api/v1/faunas");
         if (!response.ok) {
           throw new Error(
-            `Error fetching card information: ${response.statusText}`
+           ` Error fetching card information: ${response.statusText}`
           );
         }
         const { faunas } = await response.json(); // Destructure the 'faunas' property directly
-
+        console.log(faunas);
         // Filter cards based on the category being "Flora"
-        const floraCards = faunas.filter((fauna) => fauna.category === "Flora");
+        const floraCards = faunas.filter(
+          (fauna) => String(fauna.category) === String("Flora")
+        );
+        console.log(floraCards);
         setCards(floraCards);
       } catch (error) {
         console.error("Error fetching card information:", error.message);
@@ -32,17 +35,19 @@ const CardList = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
-        {cards.map(({ _id, name, scientificname, category, images }) => (
-          <Card
-            key={_id}
-            id={_id}
-            name={name}
-            scientificname={scientificname}
-            category={category}
-            images={images}
-          />
-        ))}
+      <div className="card_container">
+        <div className="container">
+          {cards.map(({ _id, name, scientificname, category, images }) => (
+            <Card
+              key={_id}
+              id={_id}
+              name={name}
+              scientificname={scientificname}
+              category={category}
+              images={images}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

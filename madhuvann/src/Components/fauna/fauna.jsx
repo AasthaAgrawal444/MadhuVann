@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import Navbar from "../homepage/Navbar";
+import React, { useEffect, useState } from "react";
 import Card from "../card/Card";
+import Navbar from "../homepage/Navbar";
+import "./fauna.css";
 
 const FaunaCardList = () => {
   const [cards, setCards] = useState([]);
@@ -32,17 +32,19 @@ const FaunaCardList = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
-        {cards.map(({ _id, name, scientificname, category, images }) => (
-          <Card
-            key={_id}
-            id={_id}
-            name={name}
-            scientificname={scientificname}
-            category={category}
-            images={images}
-          />
-        ))}
+      <div className="fauna_card_container">
+        <div className="fauna_container">
+          {cards.map(({ _id, name, scientificname, category, images }) => (
+            <Card
+              key={_id}
+              id={_id}
+              name={name}
+              scientificname={scientificname}
+              category={category}
+              images={images}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

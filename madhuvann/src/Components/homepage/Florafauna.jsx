@@ -1,8 +1,11 @@
-import React from "react";
+
+import React, { useState } from "react";
 import animals from "../Assets/animals.jpeg";
 import flowers from "../Assets/flowers.jpeg";
 import clicks from "../Assets/click.png";
 import { Link } from "react-router-dom";
+import Album from "./Album";
+
 
 const GreenRectangleWithCircles = () => {
   const containerStyle = {
@@ -72,6 +75,19 @@ const GreenRectangleWithCircles = () => {
     transform: "scaleX(-1)",
     borderRadius: "0 50rem 50rem 0",
   };
+  const [value, setvalue] = useState();
+
+  // const handleSmallerRectanglesClick = () => {
+  //     (e) => {
+  //       setvalue(e.target.value);
+  //       console.log("Mirrored Smaller Rectangles Clicked");
+  //     }
+  // };
+
+  // const handleMirroredSmallerRectanglesClick = () => {
+  //   console.log("Mirrored Smaller Rectangles Clicked");
+  // };
+
 
   const smalrectangleText = {
     fontFamily: "DM Serif Display",
@@ -115,7 +131,6 @@ const GreenRectangleWithCircles = () => {
           </Link>
         </div>
       </div>
-
       <div style={smalrectangle}>
         <Link to="/flora">
           {" "}
@@ -129,12 +144,14 @@ const GreenRectangleWithCircles = () => {
             height: "50px",
           }}
         />
+
         <Link to="/fauna">
           <div style={{ ...secondsmallerrectangles, ...smalrectangleText }}>
             Fauna
           </div>
         </Link>
       </div>
+      <Album value={value} />
       <style>
         {`
           @media (max-width: 768px) {
@@ -147,7 +164,7 @@ const GreenRectangleWithCircles = () => {
             ${smallerrectangles}
             ${smalrectangleText}
             ${secondsmallerrectangles}
-         
+
           }
         `}
       </style>

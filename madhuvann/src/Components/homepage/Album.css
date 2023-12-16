@@ -1,0 +1,21 @@
+.container-album {
+  background-color: #051522;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 800px) and (min-width: 100px) {
+  .container-album {
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 100px) {
+  .container-album {
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
