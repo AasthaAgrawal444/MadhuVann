@@ -1,0 +1,14 @@
+.card_container {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+}

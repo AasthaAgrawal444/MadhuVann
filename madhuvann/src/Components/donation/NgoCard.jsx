@@ -13,7 +13,7 @@ const NgoCard = (props) => {
           <div className="descript">{props.description}</div>
           <div className="desborder"></div>
           <div className="donatebut">
-            <h2>Donate</h2>
+            <a href={props.url}><h2>Donate</h2></a>
           </div>
         </div>
       </div>
