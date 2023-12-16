@@ -6,48 +6,36 @@ const cloudinary = require("../utils/cloudinary");
 
 //create florafauna
 exports.createFloraFauna = catchAsyncErrors(async (req, res, next) => {
-  const {
-    name,
-    scientificname,
-    description,
-    quantity,
-    image,
-    category,
-    iucntype,
-    iucndef,
-    location,
-    createdAt,
-  } = req.body;
-
   let images = [];
-//   console.log({files:req.files.images});
+
   if (typeof req.files.images === "string") {
     images.push(req.files.images);
   } else {
     images = req.files.images;
   }
 
-//   console.log(images);
-  const imagesLink = [];
-  images.forEach(async(element)=>{
-    console.log({element:element.tempFilePath});
-    const result = await cloudinary.uploader.upload(element.tempFilePath, {
+  let imagesLink = await Promise.all(
+    images.map(async (element) => {
+      const result = await cloudinary.uploader.upload(element.tempFilePath, {
         folder: "florafaunas",
       });
-      console.log({ result });  })
+      // console.log("JDLSFJ");
+      console.log(result.public_id);
 
-  const fauna = await Fauna.create({
-    name,
-    scientificname,
-    description,
-    quantity,
-    image: imagesLink,
-    category,
-    iucntype,
-    iucndef,
-    location,
-    createdAt,
-  });
+      // Push an object with public_id and url properties into imagesLink
+      return {
+        public_id: result.public_id,
+        url: result.secure_url,
+      };
+    })
+  );
+
+  // console.log("KLDSJFJ");
+  // console.log(imagesLink);
+
+  req.body.images = imagesLink;
+
+  const fauna = await Fauna.create(req.body);
 
   res.status(201).json({
     success: true,
