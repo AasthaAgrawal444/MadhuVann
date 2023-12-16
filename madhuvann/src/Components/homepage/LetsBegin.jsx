@@ -15,7 +15,7 @@ function LetsBegin() {
           witness the beauty and diversity of animals, plants, and extinct
           animals from all over the world. It is only a click away!
         </p>
-        <div class="number">
+        <div className="number">
           <div>
             {" "}
             <p>50+ fauna specimen</p>
@@ -27,8 +27,8 @@ function LetsBegin() {
       </div>
       <div className="child">
         <img className="image" src={begin} alt="begin image" />
-        <div class="letsButton">
-          <button class="letsbegin">Let's Begin</button>
+        <div className="letsButton">
+          <button className="letsbegin">Let's Begin</button>
         </div>
       </div>
       <br />
