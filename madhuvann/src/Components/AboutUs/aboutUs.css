@@ -1,0 +1,236 @@
+.desktop {
+    background-color: #f2efdc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.desktop .div {
+    background-color: #f2efdc;
+    height: 2794px;
+    position: relative;
+    width: 1920px;
+}
+
+.desktop .overlap-group {
+    background-image: url(./photo-1491147334573-44cbb4602074-1.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 2598px;
+    left: 47px;
+    position: absolute;
+    top: 127px;
+    width: 1811px;
+}
+
+.desktop .text-wrapper {
+    color: #000000;
+    font-family: "Amaranth-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    height: 270px;
+    left: 45px;
+    letter-spacing: 1.12px;
+    line-height: 42.8px;
+    position: absolute;
+    text-align: center;
+    top: 529px;
+    width: 858px;
+}
+
+.desktop .welcome-to-madhuvann {
+    color: #000000;
+    font-family: "Amaranth-Regular", Helvetica;
+    font-size: 42px;
+    font-weight: 400;
+    height: 196px;
+    left: 102px;
+    letter-spacing: 1.68px;
+    line-height: 64.3px;
+    position: absolute;
+    top: 93px;
+    width: 1691px;
+}
+
+.desktop .text-wrapper-2 {
+    color: #000000;
+    font-family: "Amaranth-Regular", Helvetica;
+    font-size: 55px;
+    font-weight: 400;
+    height: 84px;
+    left: 1002px;
+    letter-spacing: 2.2px;
+    line-height: 84.2px;
+    position: absolute;
+    top: 925px;
+    white-space: nowrap;
+}
+
+.desktop .p {
+    color: #000000;
+    font-family: "Amaranth-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    height: 301px;
+    left: 941px;
+    letter-spacing: 1.12px;
+    line-height: 42.8px;
+    position: absolute;
+    text-align: center;
+    top: 1040px;
+    width: 817px;
+}
+
+.desktop .text-wrapper-3 {
+    color: #000000;
+    font-family: "Amaranth-Regular", Helvetica;
+    font-size: 55px;
+    font-weight: 400;
+    height: 84px;
+    left: 273px;
+    letter-spacing: 2.2px;
+    line-height: 84.2px;
+    position: absolute;
+    top: 419px;
+    white-space: nowrap;
+}
+
+.desktop .text-wrapper-4 {
+    color: #000000;
+    font-family: "Amaranth-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    height: 258px;
+    left: 94px;
+    letter-spacing: 1.12px;
+    line-height: 42.8px;
+    position: absolute;
+    text-align: center;
+    top: 1641px;
+    width: 733px;
+}
+
+.desktop .flexcontainer {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 306px;
+    left: 863px;
+    position: absolute;
+    top: 2148px;
+    width: 923px;
+}
+
+.desktop .text {
+    align-self: stretch;
+    color: #000000;
+    font-family: "Amaranth-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1.12px;
+    line-height: 42.8px;
+    position: relative;
+    text-align: center;
+}
+
+.desktop .span {
+    color: #000000;
+    font-family: "Amaranth-Regular", Helvetica;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 1.12px;
+    line-height: 42.8px;
+}
+
+.desktop .output {
+    height: 330px;
+    left: 970px;
+    object-fit: cover;
+    position: absolute;
+    top: 446px;
+    width: 787px;
+}
+
+.desktop .environment-earth {
+    height: 299px;
+    left: 986px;
+    object-fit: cover;
+    position: absolute;
+    top: 1568px;
+    width: 756px;
+}
+
+.desktop .text-wrapper-5 {
+    color: #000000;
+    font-family: "Amaranth-Regular", Helvetica;
+    font-size: 55px;
+    font-weight: 400;
+    height: 84px;
+    left: 159px;
+    letter-spacing: 2.2px;
+    line-height: 84.2px;
+    position: absolute;
+    top: 1525px;
+    white-space: nowrap;
+}
+
+.desktop .text-wrapper-6 {
+    color: #000000;
+    font-family: "Amaranth-Regular", Helvetica;
+    font-size: 55px;
+    font-weight: 400;
+    height: 84px;
+    left: 1074px;
+    letter-spacing: 2.2px;
+    line-height: 84.2px;
+    position: absolute;
+    top: 2053px;
+    white-space: nowrap;
+}
+
+.desktop .gsu-wildlife-center {
+    height: 389px;
+    left: 45px;
+    object-fit: cover;
+    position: absolute;
+    top: 2116px;
+    width: 756px;
+}
+
+.desktop .element {
+    height: 299px;
+    left: 45px;
+    object-fit: cover;
+    position: absolute;
+    top: 1010px;
+    width: 756px;
+}
+
+.desktop .picsart {
+    height: 80px;
+    left: 907px;
+    object-fit: cover;
+    position: absolute;
+    top: 7px;
+    width: 86px;
+}
+
+.desktop .menu {
+    height: 60px;
+    left: 1828px;
+    object-fit: cover;
+    position: absolute;
+    top: 17px;
+    width: 60px;
+}
+
+.desktop .hamburger {
+    height: 50px;
+    left: 22px;
+    object-fit: cover;
+    position: absolute;
+    top: 22px;
+    width: 50px;
+}

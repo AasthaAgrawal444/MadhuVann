@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div className="Flex_bar">
       <div>
-        <img src={ham} height="20px" />
+        <Link to="/aboutUs"><img src={ham} height="20px" /></Link>
       </div>
       <div>
         <img src={logo} height="95px"></img>
