@@ -1,5 +1,5 @@
 .card_wrapper {
-  width: 16rem;
+  width: 18rem;
   display: flex;
   flex-direction: column;
   padding-bottom: 1rem;
@@ -19,8 +19,8 @@
 .card_img_cont {
   border: 5px solid #22c55e;
   border-radius: 50%;
-  width: 12rem;
-  height: 12rem;
+  width: 14rem;
+  height: 14rem;
   overflow: hidden;
   display: flex;
   align-items: center;
