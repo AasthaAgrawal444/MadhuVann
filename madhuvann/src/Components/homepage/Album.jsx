@@ -4,7 +4,6 @@ import axios from "axios";
 // import "./album.css";
 
 const baseURL = "http://localhost:6000/api/v1/faunas";
-//var self = this;
 
 const Album = (prop) => {
   console.log(prop.value);

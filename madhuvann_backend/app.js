@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const cors = require("cors");
 
 const errorMiddleware = require("./middleware/error");
 const fileUpload = require("express-fileupload");
