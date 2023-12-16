@@ -72,7 +72,7 @@ const GreenRectangleWithCircles = () => {
     transform: "scaleX(-1)",
     borderRadius: "0 50rem 50rem 0",
   };
-  const [value, setvalue] = useState("flora");
+  const [value, setvalue] = useState();
 
   // const handleSmallerRectanglesClick = () => {
   //     (e) => {
@@ -123,8 +123,6 @@ const GreenRectangleWithCircles = () => {
           />
         </div>
       </div>
-
-      <Album value={value} />
       <div style={smalrectangle}>
         <div
           style={{ ...smallerrectangles, ...smalrectangleText }}
