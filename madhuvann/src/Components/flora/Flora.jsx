@@ -17,9 +17,12 @@ const CardList = () => {
           );
         }
         const { faunas } = await response.json(); // Destructure the 'faunas' property directly
-
+        console.log(faunas);
         // Filter cards based on the category being "Flora"
-        const floraCards = faunas.filter((fauna) => fauna.category === "Flora");
+        const floraCards = faunas.filter(
+          (fauna) => String(fauna.category) === String("Flora")
+        );
+        console.log(floraCards);
         setCards(floraCards);
       } catch (error) {
         console.error("Error fetching card information:", error.message);

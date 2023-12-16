@@ -5,7 +5,6 @@ import Introductory from "./homepage/Introductory";
 import IUCN from "./homepage/IUCN";
 import Footer from "./Footer";
 import GreenRectangleWithCircles from "./homepage/Florafauna";
-
 function Homepage() {
   return (
     <div>
@@ -13,7 +12,6 @@ function Homepage() {
       <LetsBegin />
       <Introductory />
       <GreenRectangleWithCircles />
-
       <IUCN />
       <Footer />
     </div>
