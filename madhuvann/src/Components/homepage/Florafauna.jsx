@@ -1,9 +1,11 @@
+
 import React, { useState } from "react";
 import animals from "../Assets/animals.jpeg";
 import flowers from "../Assets/flowers.jpeg";
 import clicks from "../Assets/click.png";
 import { Link } from "react-router-dom";
 import Album from "./Album";
+
 
 const GreenRectangleWithCircles = () => {
   const containerStyle = {
@@ -86,6 +88,7 @@ const GreenRectangleWithCircles = () => {
   //   console.log("Mirrored Smaller Rectangles Clicked");
   // };
 
+
   const smalrectangleText = {
     fontFamily: "DM Serif Display",
     display: "flex",
@@ -141,6 +144,7 @@ const GreenRectangleWithCircles = () => {
             height: "50px",
           }}
         />
+
         <Link to="/fauna">
           <div style={{ ...secondsmallerrectangles, ...smalrectangleText }}>
             Fauna
@@ -159,7 +163,7 @@ const GreenRectangleWithCircles = () => {
             ${smallerrectangles}
             ${smalrectangleText}
             ${secondsmallerrectangles}
-         
+
           }
         `}
       </style>
