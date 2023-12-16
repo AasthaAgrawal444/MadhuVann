@@ -107,7 +107,7 @@ const TextToSpeechToggle = ({ textToRead }) => {
   }, [isSpeaking]);
 
   return (
-    <div>
+    <div className="containerbutton">
       <div className="player">
         {isSpeaking ? (
           <Stop onPlayerClick={toggleSpeech} />
