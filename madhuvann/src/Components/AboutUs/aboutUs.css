@@ -14,12 +14,12 @@
 }
 
 .desktop .overlap-group {
-    background-image: url(./photo-1491147334573-44cbb4602074-1.png);
+    /* background-image: url(./photo-1491147334573-44cbb4602074-1.png); */
     background-position: 50% 50%;
     background-size: cover;
     height: 2598px;
     left: 47px;
-    position: absolute;
+    /* position: absolute; */
     top: 127px;
     width: 1811px;
 }
