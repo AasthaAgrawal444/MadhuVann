@@ -53,6 +53,8 @@ import Holo from "./Components/hologram/hologram.jsx";
 import FaunaCardList from "./Components/fauna/fauna.jsx";
 // import aboutUs from "./Components/AboutUs/aboutUs.jsx";
 import About from "./Components/AboutUs/about.jsx";
+import Feedback from "./Components/feedback/Feedback.jsx";
+
 
 
 function App() {
@@ -71,6 +73,7 @@ function App() {
           <Route path="/holo/:id" element={<Holo />} />
           {/* <Route path="/about" exact element={<about />} /> */}
           <Route path="/about" exact element={<About />} /> 
+          <Route path="/Feedback" exact element={<Feedback/>}/>
 
         </Routes>
       </Router>
