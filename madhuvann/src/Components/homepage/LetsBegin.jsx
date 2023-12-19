@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import begin from "../Assets/begin.png";
 
 import "./LetsBegin.css";
+
 function LetsBegin() {
   return (
     <div className="parent">
@@ -17,7 +19,6 @@ function LetsBegin() {
         </p>
         <div className="number">
           <div>
-            {" "}
             <p>50+ fauna specimen</p>
           </div>
           <div>
@@ -28,7 +29,14 @@ function LetsBegin() {
       <div className="child">
         <img className="image" src={begin} alt="begin image" />
         <div className="letsButton">
-          <button className="letsbegin">Let's Begin</button>
+          <button className="letsbegin">
+            <AnchorLink
+              href="#flfa"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Let's Begin
+            </AnchorLink>
+          </button>
         </div>
       </div>
       <br />

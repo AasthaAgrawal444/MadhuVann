@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Navbar from "../homepage/Navbar";
+import text_button from "../Assets/button_text.png";
+import Loader from "../layouts/Loader/Loader";
+import "./description.css";
 
 const DetailedPage = () => {
   const { id } = useParams();
@@ -34,155 +37,104 @@ const DetailedPage = () => {
   }, [id]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
   }
 
   if (!detailedInfo) {
     return <div>Error loading detailed information.</div>;
   }
+  const type = detailedInfo.iucntype;
 
   const image2 = detailedInfo.images[1].url;
 
   return (
     <div>
-    <div>
-      <Navbar />
-      <div
-        style={{
-          backgroundColor: "black",
-          width: "80vw",
-          margin: "auto",
-          textAlign: "center",
-          borderRadius: "3rem",
-        }}
-      >
-      <Link to={`/holo/${id}`}>HOLO</Link>
-        <img
-          src={image2}
-          alt="photo_plant"
-          style={{ maxWidth: "70vw", textAlign: "center" }}
-        />
-      </div>
+      <div>
+        <Navbar />
+        <div
+          style={{
+            backgroundColor: "black",
+            width: "90vw",
+            margin: "auto",
+            textAlign: "center",
+            borderRadius: "2rem",
+          }}
+        >
+          <img
+            src={image2}
+            alt="photo_plant"
+            style={{ maxWidth: "70vw", textAlign: "center" }}
+          />
+          <div
+            style={{
+              width: "90vw",
+              margin: "auto",
+              textAlign: "center",
+              borderRadius: "4rem",
+              padding: "1.5rem",
+              display: "flex",
+              alignItems: "center",
+              textAlign: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <div
+              style={{
+                backgroundColor: "#F2EFDC",
+                color: "black",
+                fontSize: "2rem",
+                float: "initial",
+                borderRadius: "2rem",
+                padding: "0.5rem",
+                paddingTop: "0rem",
+                paddingBottom: "0rem",
+              }}
+            >
+              {detailedInfo.name}
+              <i>({detailedInfo.scientificname})</i>
+            </div>
+            <div>
+              <Link to={`/holo/${id}`}>
+                <img
+                  style={{ height: "3rem" }}
+                  src={text_button}
+                  alt="text_mode"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
 
-      <h1
-        style={{
-          width: "80vw",
-          margin: "auto",
-          textAlign: "center",
-          borderRadius: "4rem",
-          padding: "1.5rem",
-        }}
-      >
-        {detailedInfo.name}
-      </h1>
+        <div className="flexiboxx">
+          <div className="chip">
+            <h3>Population</h3>
+            {detailedInfo.quantity}
+          </div>
+          <div className="chip">
+            <h3>IUCN Status</h3>
+            {detailedInfo.iucndef}
+          </div>
+          <div className="chip">
+            <h3>Habitat</h3>
+            {detailedInfo.location}
+          </div>
+        </div>
+        <div className="desc-div">
+          <div className="desc">{detailedInfo.description}</div>
+        </div>
 
-      {/* Styling for Quantity, IUCN type, and Population */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          marginTop: "1rem",
-        }}
-      >
-        <div
-          style={{
-            width: "30vw",
-            margin: "1rem",
-            borderRadius: "1rem",
-            backgroundColor: "rgba(255, 255, 255, 0.7)",
-          }}
-        >
-          <p>Quantity: {detailedInfo.quantity}</p>
-        </div>
-        <div
-          style={{
-            width: "30vw",
-            margin: "1rem",
-            borderRadius: "1rem",
-            backgroundColor: "rgba(255, 255, 255, 0.7)",
-          }}
-        >
-          <p>IUCN Type: {detailedInfo.iucntype}</p>
-        </div>
-        <div
-          style={{
-            width: "30vw",
-            margin: "1rem",
-            borderRadius: "1rem",
-            backgroundColor: "rgba(255, 255, 255, 0.7)",
-          }}
-        >
-          <p>Population: {detailedInfo.population}</p>
-        </div>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          marginTop: "1rem",
-        }}
-      >
-        <div
-          style={{
-            width: "30vw",
-            margin: "1rem",
-            borderRadius: "1rem",
-            backgroundColor: "rgba(255, 255, 255, 0.7)",
-          }}
-        >
-          <p style={{ margin: "0.5rem 0" }}>
-            Scientific Name: {detailedInfo.scientificname}
-          </p>
-        </div>
-        <div
-          style={{
-            width: "30vw",
-            margin: "1rem",
-            borderRadius: "1rem",
-            backgroundColor: "rgba(255, 255, 255, 0.7)",
-          }}
-        >
-          <p style={{ margin: "0.5rem 0" }}>
-            IUCN Definition: {detailedInfo.iucndef}
-          </p>
-        </div>
-        <div
-          style={{
-            width: "30vw",
-            margin: "1rem",
-            borderRadius: "1rem",
-            backgroundColor: "rgba(255, 255, 255, 0.7)",
-          }}
-        >
-          <p style={{ margin: "0.5rem 0" }}>
-            Location: {detailedInfo.location}
-          </p>
-        </div>
-      </div>
+        <button
+          style={{ backgroundImage: "url(path/to/button-image1.png)" }}
+        ></button>
 
-      {/* Styling for Description */}
-      <div
-        style={{
-          backgroundColor: "rgba(255, 255, 255, 0.7)",
-          borderRadius: "1rem",
-          padding: "1rem",
-          margin: "1rem",
-        }}
-      >
-        <p>Description: {detailedInfo.description}</p>
+        <button
+          style={{ backgroundImage: "url(path/to/button-image2.png)" }}
+        ></button>
       </div>
-
-      {/* Buttons with images */}
-      <Link to={`/holo/${id}`}>holo</Link>
-        <button style={{ backgroundImage: "url(path/to/button-image1.png)" }}>
-          {/* Add any additional styling for the button */}
-        </button>
-      
-      <button style={{ backgroundImage: "url(path/to/button-image2.png)" }}>
-        {/* Add any additional styling for the button */}
-      </button>
-      </div>
-      {/* Additional details with margin */}
     </div>
   );
 };

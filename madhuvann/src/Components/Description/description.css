@@ -1,0 +1,25 @@
+.chip {
+  width: 30vw;
+  background-color: #97b18e;
+  text-align: center;
+  border-radius: 3rem;
+}
+.flexiboxx {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.desc {
+  width: 95vw;
+  font-size: larger;
+  background-color: #97b18e;
+  display: block;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.desc-div {
+  text-align: center;
+  margin: auto;
+  margin-left: 25px;
+}
