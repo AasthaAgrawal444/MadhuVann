@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./hologram.css";
 import { useNavigate } from "react-router-dom";
+import holo from "../Assets/holo_mode.png";
 
 const Holo = () => {
   const { id } = useParams();
@@ -50,33 +51,39 @@ const Holo = () => {
     };
     return (
       <>
-        <button onClick={goBack}>Back</button>
+        <button
+          style={{ marginTop: "1.5vh", marginLeft: ".78rem" }}
+          onClick={goBack}
+        >
+          <img style={{ height: "5vh" }} src={holo} />
+        </button>
       </>
     );
   }
 
   return (
-    <div className="page">
-      <div className="page-div">
-        <div className="image top">
-          <img className="holoimage" src={image2} alt="animal" />
-        </div>
-        <div className="flex">
-          <div className="image left">
-            <img className="holoimage" src={image2} alt="animal" />
-          </div>
-          <div className="square" />
-          <div className="image right">
-            <img className="holoimage" src={image2} alt="animal" />
-          </div>
-        </div>
-        <div className="image bottom">
-          <img className="holoimage" src={image2} alt="animal" />
-        </div>
-      </div>
-      <div>
+    <div>
+      <div style={{ backgroundColor: "black" }}>
         <Back> back</Back>
-        
+      </div>
+      <div className="page">
+        <div className="page-div">
+          <div className="image top">
+            <img className="holoimage" src={image2} alt="animal" />
+          </div>
+          <div className="flex">
+            <div className="image left">
+              <img className="holoimage" src={image2} alt="animal" />
+            </div>
+            <div className="square" />
+            <div className="image right">
+              <img className="holoimage" src={image2} alt="animal" />
+            </div>
+          </div>
+          <div className="image bottom">
+            <img className="holoimage" src={image2} alt="animal" />
+          </div>
+        </div>
       </div>
     </div>
   );
