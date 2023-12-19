@@ -34,11 +34,11 @@ const FaunaCardList = () => {
       <Navbar />
       <div className="fauna_card_container">
         <div className="fauna_container">
-          {cards.map(({ _id, name, scientificname, category, images }) => (
+          {cards.map(({ _id, fname, scientificname, category, images }) => (
             <Card
               key={_id}
               id={_id}
-              name={name}
+              fname={fname}
               scientificname={scientificname}
               category={category}
               images={images}
