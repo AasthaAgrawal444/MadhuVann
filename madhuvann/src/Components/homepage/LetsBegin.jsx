@@ -30,7 +30,6 @@ function LetsBegin() {
       <div className="child">
         <img className="image" src={begin} alt="begin image" />
         <div className="letsButton">
-<<<<<<< HEAD
           <button className="letsbegin">
             <AnchorLink
               href="#flfa"
@@ -39,9 +38,10 @@ function LetsBegin() {
               Let's Begin
             </AnchorLink>
           </button>
-=======
-          <Link to='/eduVideos'>  <button className="letsbegin">Let's Begin</button></Link>
->>>>>>> 12a8f5f5f698340df2bd0a25f72fb3dc68231584
+          <Link to="/eduVideos">
+            {" "}
+            <button className="letsbegin">Let's Begin</button>
+          </Link>
         </div>
       </div>
       <br />

@@ -13,7 +13,7 @@ const CardList = () => {
         const response = await fetch("http://localhost:4000/api/v1/faunas");
         if (!response.ok) {
           throw new Error(
-           ` Error fetching card information: ${response.statusText}`
+            ` Error fetching card information: ${response.statusText}`
           );
         }
         const { faunas } = await response.json(); // Destructure the 'faunas' property directly
@@ -37,11 +37,11 @@ const CardList = () => {
       <Navbar />
       <div className="card_container">
         <div className="container">
-          {cards.map(({ _id, name, scientificname, category, images }) => (
+          {cards.map(({ _id, fname, scientificname, category, images }) => (
             <Card
               key={_id}
               id={_id}
-              name={name}
+              fname={fname}
               scientificname={scientificname}
               category={category}
               images={images}

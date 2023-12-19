@@ -64,11 +64,28 @@ const DetailedPage = () => {
             borderRadius: "2rem",
           }}
         >
-          <img
-            src={image2}
-            alt="photo_plant"
-            style={{ maxWidth: "70vw", textAlign: "center" }}
-          />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src={image2}
+              alt="photo_plant"
+              style={{ maxWidth: "70vw", textAlign: "center" }}
+            />
+            <div>
+              {" "}
+              <iframe
+                width="450px"
+                height="300px"
+                class="embed-responsive-item"
+                src={detailedInfo.link}
+              ></iframe>
+            </div>
+          </div>
           <div
             style={{
               width: "90vw",
@@ -94,7 +111,7 @@ const DetailedPage = () => {
                 paddingBottom: "0rem",
               }}
             >
-              {detailedInfo.name}
+              {detailedInfo.fname}
               <i>({detailedInfo.scientificname})</i>
             </div>
             <div>
