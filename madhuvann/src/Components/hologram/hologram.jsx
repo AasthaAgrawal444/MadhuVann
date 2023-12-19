@@ -3,8 +3,6 @@ import { useParams } from "react-router-dom";
 import "./hologram.css";
 import { useNavigate } from "react-router-dom";
 
-
-
 const Holo = () => {
   const { id } = useParams();
   const [holoData, setHoloData] = useState(null);

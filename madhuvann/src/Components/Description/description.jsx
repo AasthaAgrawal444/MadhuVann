@@ -75,7 +75,6 @@ const DetailedPage = () => {
       >
         {detailedInfo.name}
       </h1>
-      
 
       {/* Styling for Quantity, IUCN type, and Population */}
       <div
