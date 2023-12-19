@@ -1,57 +1,57 @@
 .desktop {
     background-color: #f2efdc;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+     justify-content: center;
     width: 100%;
 }
 
-.desktop .div {
+ /*.desktop .div {
     background-color: #f2efdc;
-    height: 2794px;
-    position: relative;
-    width: 1920px;
-}
+    /* height: 2794px; */
+    /* position: relative; */
+    /* width: 1920px; 
+ }*/
+  
 
-.desktop .overlap-group {
-    /* background-image: url(./photo-1491147334573-44cbb4602074-1.png); */
-    background-position: 50% 50%;
-    background-size: cover;
-    height: 2598px;
-    left: 47px;
-    /* position: absolute; */
-    top: 127px;
-    width: 1811px;
-}
+ .desktop .overlap-group { 
+    background-image: url('../Assets/backga.png');
+     background-position: 50% 50%;
+    background-size: cover;  
+    position: absolute;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin: 1%;
+    top: 6rem;
+ }
+
+
+
+.overlap-group > h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+ }
+
+  /*
 
 .desktop .text-wrapper {
     color: #000000;
-    font-family: "Amaranth-Regular", Helvetica;
-    font-size: 28px;
+    font-size: 1.5rem;
     font-weight: 400;
-    height: 270px;
     left: 45px;
     letter-spacing: 1.12px;
-    line-height: 42.8px;
-    position: absolute;
     text-align: center;
-    top: 529px;
-    width: 858px;
 }
 
 .desktop .welcome-to-madhuvann {
     color: #000000;
-    font-family: "Amaranth-Regular", Helvetica;
-    font-size: 42px;
     font-weight: 400;
-    height: 196px;
-    left: 102px;
     letter-spacing: 1.68px;
-    line-height: 64.3px;
-    position: absolute;
     top: 93px;
-    width: 1691px;
-}
+} */
+
+/*
 
 .desktop .text-wrapper-2 {
     color: #000000;
@@ -78,9 +78,9 @@
     line-height: 42.8px;
     position: absolute;
     text-align: center;
-    top: 1040px;
-    width: 817px;
-}
+    top: 1040px; */
+    /* width: 817px; */
+/* }
 
 .desktop .text-wrapper-3 {
     color: #000000;
@@ -107,23 +107,23 @@
     line-height: 42.8px;
     position: absolute;
     text-align: center;
-    top: 1641px;
-    width: 733px;
-}
+    top: 1641px; */
+    /* width: 733px; */
+/* }
 
 .desktop .flexcontainer {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    height: 306px;
-    left: 863px;
-    position: absolute;
-    top: 2148px;
-    width: 923px;
-}
+    height: 306px; */
+    /* left: 863px; */
+    /* position: absolute; */
+    /* top: 2148px; */
+    /* width: 923px; */
+/* } */
 
-.desktop .text {
+/* .desktop .text {
     align-self: stretch;
     color: #000000;
     font-family: "Amaranth-Regular", Helvetica;
@@ -233,4 +233,4 @@
     position: absolute;
     top: 22px;
     width: 50px;
-}
+}  */

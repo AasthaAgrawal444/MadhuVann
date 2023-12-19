@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import TextToSpeechToggle from "../tts/tts";
 import { Link } from "react-router-dom";
 import Navbar from "../homepage/Navbar";
 
@@ -46,6 +45,7 @@ const DetailedPage = () => {
 
   return (
     <div>
+    <div>
       <Navbar />
       <div
         style={{
@@ -56,9 +56,10 @@ const DetailedPage = () => {
           borderRadius: "3rem",
         }}
       >
+      <Link to={`/holo/${id}`}>HOLO</Link>
         <img
           src={image2}
-          alt="Image 2"
+          alt="photo_plant"
           style={{ maxWidth: "70vw", textAlign: "center" }}
         />
       </div>
@@ -74,7 +75,7 @@ const DetailedPage = () => {
       >
         {detailedInfo.name}
       </h1>
-      <TextToSpeechToggle textToRead={detailedInfo.description} />
+      
 
       {/* Styling for Quantity, IUCN type, and Population */}
       <div
@@ -173,15 +174,15 @@ const DetailedPage = () => {
       </div>
 
       {/* Buttons with images */}
-      <Link to={`/holo/${id}`}>
+      <Link to={`/holo/${id}`}>holo</Link>
         <button style={{ backgroundImage: "url(path/to/button-image1.png)" }}>
           {/* Add any additional styling for the button */}
         </button>
-      </Link>
+      
       <button style={{ backgroundImage: "url(path/to/button-image2.png)" }}>
         {/* Add any additional styling for the button */}
       </button>
-
+      </div>
       {/* Additional details with margin */}
     </div>
   );
