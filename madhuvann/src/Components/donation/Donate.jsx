@@ -2,12 +2,12 @@ import React from 'react'
 import './Donate.css';
 import NgoCard from './NgoCard';
 import NgoList from './NgoList';
-import Navbar from '../homepage/Navbar';
+import NavDonate from './navDonation';
 
 const Donate = () => {
   return (
     <div>
-    <Navbar />
+    <NavDonate />
         <div className='cards'>
         {NgoList.map((NgoList) => (
             <NgoCard 

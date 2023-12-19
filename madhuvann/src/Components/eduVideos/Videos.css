@@ -1,0 +1,78 @@
+body {
+    background-color: #f2efdc;
+    color: #111;
+    width: 100%;
+  }
+  
+  .cocards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0 2rem;
+  }
+  
+  .videoList {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: 1rem; */
+    margin-bottom: -3rem;
+    width: 20rem;
+    max-width: 18rem;
+  }
+  
+  .videoCard {
+    position: relative;
+    /* background-color: #97b18e; */
+    border-radius: 3rem;
+    /* border: #111; */
+    /* border-width: 2px; */
+    align-items: center;
+    /* border-style: solid; */
+    margin: 1rem;
+    flex: 1 0 25rem;
+    /* width: 17rem; */
+    height: 20rem;
+    transition: 0.2s;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-family: DM Serif Display;
+  }
+  
+  .cardtops {
+    height: 60%;
+    border-radius: 2.2rem 2.2rem 0 0;
+  } 
+
+  .videoImage {
+    max-width: 90%;
+    height: 11rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.2rem;
+  }
+  
+  /* .cardbottoms > h3 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+    width: 17rem;
+  } */
+  
+  /* .cardbottoms {
+    height: 50%;
+  } */
+
+  .cardbots {
+    text-align: center;
+    width: 20rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+    /* font-size: 10px; */
+  }
+
+  .cardbots > h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  

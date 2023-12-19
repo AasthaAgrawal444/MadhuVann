@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import begin from "../Assets/begin.png";
 
 import "./LetsBegin.css";
+
 function LetsBegin() {
   return (
     <div className="parent">
@@ -16,19 +19,29 @@ function LetsBegin() {
           animals from all over the world. It is only a click away!
         </p>
         <div className="number">
-          <div>
-            {" "}
+          {/* <div>
             <p>50+ fauna specimen</p>
           </div>
           <div>
             <p>100+ flora specimen</p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="child">
         <img className="image" src={begin} alt="begin image" />
         <div className="letsButton">
-          <button className="letsbegin">Let's Begin</button>
+          {/* <button className="letsbegin">
+            <AnchorLink
+              href="#flfa"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Let's Begin
+            </AnchorLink>
+          </button> */}
+          <Link to="/eduVideos">
+            {" "}
+            <button className="letsbegin">Let's Begin</button>
+          </Link>
         </div>
       </div>
       <br />

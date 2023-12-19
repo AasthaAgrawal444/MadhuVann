@@ -30,9 +30,6 @@ exports.createFloraFauna = catchAsyncErrors(async (req, res, next) => {
     })
   );
 
-  // console.log("KLDSJFJ");
-  // console.log(imagesLink);
-
   req.body.images = imagesLink;
 
   const fauna = await Fauna.create(req.body);
@@ -42,6 +39,28 @@ exports.createFloraFauna = catchAsyncErrors(async (req, res, next) => {
     fauna,
   });
 });
+
+  // let video =[]
+
+  // if(typeof req.files.video === "string"){
+  //   video.push(req.files.video);
+  // } else {
+  //   video = req.files.video;
+  // }
+
+  // let videoLink = await cloudinary.uploader.upload(tempFilePath, {
+  //   folder: "florafaunas",
+  // })
+
+  // return {
+  //   public_id : videoLink.public_id,
+  //   url: videoLink.secure_url,
+  // }
+
+  // console.log("KLDSJFJ");
+  // console.log(imagesLink);
+
+  
 
 //Get all flora faunas
 

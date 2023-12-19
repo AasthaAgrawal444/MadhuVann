@@ -1,11 +1,9 @@
-
 import React, { useState } from "react";
 import animals from "../Assets/animals.jpeg";
 import flowers from "../Assets/flowers.jpeg";
 import clicks from "../Assets/click.png";
 import { Link } from "react-router-dom";
 import Album from "./Album";
-
 
 const GreenRectangleWithCircles = () => {
   const containerStyle = {
@@ -88,7 +86,6 @@ const GreenRectangleWithCircles = () => {
   //   console.log("Mirrored Smaller Rectangles Clicked");
   // };
 
-
   const smalrectangleText = {
     fontFamily: "DM Serif Display",
     display: "flex",
@@ -99,7 +96,7 @@ const GreenRectangleWithCircles = () => {
 
   return (
     <>
-      <div style={containerStyle}>
+      <div id="flfa" style={containerStyle}>
         <div style={rectangleStyle}>
           <Link to="/flora">
             <img
@@ -132,9 +129,15 @@ const GreenRectangleWithCircles = () => {
         </div>
       </div>
       <div style={smalrectangle}>
-        <Link to="/flora">
+        <Link style={{ textDecoration: "none" }} to="/flora">
           {" "}
-          <div style={{ ...smallerrectangles, ...smalrectangleText }}>
+          <div
+            style={{
+              textDecoration: "none",
+              ...smallerrectangles,
+              ...smalrectangleText,
+            }}
+          >
             Flora
           </div>
         </Link>
@@ -145,8 +148,14 @@ const GreenRectangleWithCircles = () => {
           }}
         />
 
-        <Link to="/fauna">
-          <div style={{ ...secondsmallerrectangles, ...smalrectangleText }}>
+        <Link to="/fauna" style={{ textDecoration: "none" }}>
+          <div
+            style={{
+              ...secondsmallerrectangles,
+              ...smalrectangleText,
+              textDecoration: "none",
+            }}
+          >
             Fauna
           </div>
         </Link>
