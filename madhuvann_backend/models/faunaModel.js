@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const faunaSchema = new mongoose.Schema({
-  name: {
+  fname: {
     type: String,
     required: [true, "Please enter product name"],
     trim: true,
@@ -31,6 +31,20 @@ const faunaSchema = new mongoose.Schema({
       },
     }
   ],
+  link: {
+    type: String,
+    required: [true, "please enter url link"],
+  },
+  // video: {
+  //   public_id:{type: String,
+  //         required: true,
+  //   },
+  //   url: {
+  //     type: String,
+  //     required: true,
+  //   }
+  // },
+  // 
   category: {
     type: String,
     required: [true, "Please enter category flora or fauna"],

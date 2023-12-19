@@ -30,6 +30,23 @@ exports.createFloraFauna = catchAsyncErrors(async (req, res, next) => {
     })
   );
 
+  // let video =[]
+
+  // if(typeof req.files.video === "string"){
+  //   video.push(req.files.video);
+  // } else {
+  //   video = req.files.video;
+  // }
+
+  // let videoLink = await cloudinary.uploader.upload(tempFilePath, {
+  //   folder: "florafaunas",
+  // })
+
+  // return {
+  //   public_id : videoLink.public_id,
+  //   url: videoLink.secure_url,
+  // }
+
   // console.log("KLDSJFJ");
   // console.log(imagesLink);
 
