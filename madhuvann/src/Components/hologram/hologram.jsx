@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./hologram.css";
 import { useNavigate } from "react-router-dom";
-import TextToSpeechToggle from "../tts/tts";
 
 const Holo = () => {
   const { id } = useParams();
@@ -77,7 +76,7 @@ const Holo = () => {
       </div>
       <div>
         <Back> back</Back>
-        <TextToSpeechToggle textToRead={data} />
+        
       </div>
     </div>
   );
