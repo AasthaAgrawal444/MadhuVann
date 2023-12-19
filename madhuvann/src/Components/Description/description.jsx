@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import TextToSpeechToggle from "../tts/tts";
 import { Link } from "react-router-dom";
 import Navbar from "../homepage/Navbar";
 
@@ -74,7 +73,7 @@ const DetailedPage = () => {
       >
         {detailedInfo.name}
       </h1>
-      <TextToSpeechToggle textToRead={detailedInfo.description} />
+    
 
       {/* Styling for Quantity, IUCN type, and Population */}
       <div
