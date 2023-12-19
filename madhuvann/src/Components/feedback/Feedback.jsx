@@ -60,9 +60,9 @@ const Feedback = () => {
               required
             />
           </div>
-          <button type="submit" className="feedback-btn">
+          <a href="mailto:madhuvann8@gmail.com" className="feedback-btn">
             Submit
-          </button>
+          </a>
         </form>
       </div>
     </div>

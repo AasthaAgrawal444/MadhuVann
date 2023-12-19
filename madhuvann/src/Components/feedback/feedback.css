@@ -58,6 +58,11 @@ label {
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.feedback-btn:hover {
+  background-color: #acc1a5;
 }
 
 button:hover {
