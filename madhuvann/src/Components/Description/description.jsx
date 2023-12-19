@@ -5,6 +5,7 @@ import Navbar from "../homepage/Navbar";
 import text_button from "../Assets/button_text.png";
 import Loader from "../layouts/Loader/Loader";
 import "./description.css";
+import { useGlobalAudioPlayer } from "react-use-audio-player";
 
 const DetailedPage = () => {
   const { id } = useParams();
