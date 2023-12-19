@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import begin from "../Assets/begin.png";
 
@@ -28,7 +29,7 @@ function LetsBegin() {
       <div className="child">
         <img className="image" src={begin} alt="begin image" />
         <div className="letsButton">
-          <button className="letsbegin">Let's Begin</button>
+          <Link to='/eduVideos'>  <button className="letsbegin">Let's Begin</button></Link>
         </div>
       </div>
       <br />

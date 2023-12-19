@@ -1,24 +1,21 @@
-// // import { NgoList } from "./NgoList";
-// import React from "react";
+// import { NgoList } from "./NgoList";
+import React from "react";
 
-// const VideosCard = (props) => {
-//   return (
-//     <div className="ngoList">
-//       <div key={props.id} className="ngoCard">
-//         <div className="cardtop">
-//           <img src={props.image} alt="ngo-img" className="ngoImage"></img>
-//           <h3>{props.name}</h3>
-//         </div>
-//         <div className="cardbottom">
-//           <div className="descript">{props.description}</div>
-//           <div className="desborder"></div>
-//           <div className="donatebut">
-//             <a href={props.url}><h2>Donate</h2></a>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+const VideosCard = (props) => {
+  return (
+    <div className="videoList">
+      <div key={props.id} className="videoCard">
+        <div className="cardtops">
+        <a href={props.url}>
+          <img src={props.image} alt="video-img" className="videoImage"></img>
+        </a>
+        </div>
+        <div className="cardbots">
+         <h1>{props.name}</h1>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-// export default NgoCard;
+export default VideosCard;
