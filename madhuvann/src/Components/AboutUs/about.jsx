@@ -34,7 +34,6 @@ const About = () => {
                         alt="Gsu wildlife center"
                         src={MADH}
                     />
-                   
                     </div>
                     <div className="text-wrapper-2">
                     <img
@@ -53,14 +52,21 @@ const About = () => {
                     </div>
                     </div>
                     <div className="text-wrapper-3">
+                    <div className="initiative">
+                    <h2>Conservation Initiatives </h2>
                     <p>
                         MadhuVann is committed to making a positive impact on the world. We actively support and collaborate with
                         global conservation organizations to fund projects aimed at protecting endangered species, restoring
                         habitats, and raising awareness about the importance of biodiversity.
                     </p>
-                    <img className="output" alt="Output" src={BIRD} /> 
+                    </div>
+                    <img className="element" alt="Element" src={Eartha} />
                    </div>
                    <div className='text-wrapper-4'>
+                   <img className="output" alt="Output" src={BIRD} /> 
+
+                   <div className='educational'>
+                   <h2>Educational Programs</h2>
 
                         <p className="text">
                             <span className="span">
@@ -69,21 +75,15 @@ const About = () => {
                                 the role each individual can play in preserving our planet.
                                 <br />
                             </span>
-                        </p>
-                       
-                    </div>
-                    <div className='text-wrapper-5'>
-                        <p className="text">
-                            <span className="span">
+                             <span className="span">
                                 Join us on a journey of discovery and enlightenment at MadhuVann. Together, let&#39;s celebrate the
                                 wonders of the natural world and work towards a future where every species can thrive.
                             </span>
                         </p>
-                        <img className="element" alt="Element" src={Eartha} />
+                       
+                    </div>
                     </div>
 
-                    <div className="text-wrapper-5">Conservation Initiatives</div>
-                    <div className="text-wrapper-6">Educational Programs</div>
                 </div>
           </div>         
     </div>

@@ -35,6 +35,7 @@ const faunaSchema = new mongoose.Schema({
     type: String,
     required: [true, "please enter url link"],
   },
+
   // video: {
   //   public_id:{type: String,
   //         required: true,
@@ -44,7 +45,7 @@ const faunaSchema = new mongoose.Schema({
   //     required: true,
   //   }
   // },
-  // 
+  
   category: {
     type: String,
     required: [true, "Please enter category flora or fauna"],

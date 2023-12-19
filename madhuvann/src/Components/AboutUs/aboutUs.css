@@ -3,15 +3,7 @@
      justify-content: center;
     width: 100%;
 }
-
- /*.desktop .div {
-    background-color: #f2efdc;
-    /* height: 2794px; */
-    /* position: relative; */
-    /* width: 1920px; 
- }*/
   
-
  .desktop .overlap-group { 
     background-image: url('../Assets/backga.png');
      background-position: 50% 50%;
@@ -43,13 +35,15 @@
     letter-spacing: 1.12px;
     text-align: center;
 }
-
+  */
 .desktop .welcome-to-madhuvann {
     color: #000000;
-    font-weight: 400;
-    letter-spacing: 1.68px;
-    top: 93px;
-} */
+    font-weight: 600;
+    text-align: center;
+    margin: 0 2rem;
+    /* letter-spacing: 1.68px; */
+    /* top: 93px; */
+}
 
 /*
 

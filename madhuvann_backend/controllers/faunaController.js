@@ -30,6 +30,16 @@ exports.createFloraFauna = catchAsyncErrors(async (req, res, next) => {
     })
   );
 
+  req.body.images = imagesLink;
+
+  const fauna = await Fauna.create(req.body);
+
+  res.status(201).json({
+    success: true,
+    fauna,
+  });
+});
+
   // let video =[]
 
   // if(typeof req.files.video === "string"){
@@ -50,15 +60,7 @@ exports.createFloraFauna = catchAsyncErrors(async (req, res, next) => {
   // console.log("KLDSJFJ");
   // console.log(imagesLink);
 
-  req.body.images = imagesLink;
-
-  const fauna = await Fauna.create(req.body);
-
-  res.status(201).json({
-    success: true,
-    fauna,
-  });
-});
+  
 
 //Get all flora faunas
 
