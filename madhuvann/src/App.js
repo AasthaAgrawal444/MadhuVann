@@ -10,9 +10,9 @@ import IucnPage from "./Components/IUCN/iucn_page.jsx";
 import DetailedPage from "./Components/Description/description.jsx";
 import Holo from "./Components/hologram/hologram.jsx";
 import FaunaCardList from "./Components/fauna/fauna.jsx";
-// import aboutUs from "./Components/AboutUs/aboutUs.jsx";
 import About from "./Components/AboutUs/about.jsx";
 import Vids from "./Components/vids/vids.jsx";
+import Videos from "./Components/eduVideos/Videos.jsx";
 
 function App() {
   return (
@@ -31,6 +31,8 @@ function App() {
           {/* <Route path="/about" exact element={<about />} /> */}
           <Route path="/about" exact element={<About />} />
           <Route path="/vids" exact element={<Vids />} />
+          <Route path="/eduVideos" exact element={<Videos />} />
+          <Route path="/about" exact element={<About />} />
         </Routes>
       </Router>
     </div>
