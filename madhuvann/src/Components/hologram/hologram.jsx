@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./hologram.css";
 import { useNavigate } from "react-router-dom";
+import JungleSound from "../audios/junglesound.mp3";
 import holo from "../Assets/holo_mode.png";
 import TextToSpeechToggle from "../tts/tts";
 import JungleAudio from "../Assets/junglechirping.mp3";
@@ -26,6 +27,7 @@ const Holo = () => {
         const data = await response.json();
 
         setHoloData(data.fauna);
+
         let music = new Audio(JungleAudio);
         music.play();
       } catch (error) {
@@ -53,6 +55,7 @@ const Holo = () => {
     const goBack = () => {
       navigate(-1);
     };
+    
     return (
       <>
         <button

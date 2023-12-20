@@ -36,6 +36,8 @@
     text-align: center;
 }
   */
+
+
 .desktop .welcome-to-madhuvann {
     color: #000000;
     font-weight: 600;
@@ -45,7 +47,53 @@
     /* top: 93px; */
 }
 
+.text-wrapper-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.mission > h2 {
+    text-align: center;
+}
+
+.text-wrapper-1 .mission > img {
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.text-wrapper-1 .mission {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 50%;
+}
+
+.text-wrapper-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-wrapper-2 .holo {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    align-items: flex-start;
+}
+
+.text-wrapper-3 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    align-items: flex-start;
+}
+
+.text-wrapper-4 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    align-items: flex-start;
+}
 
 /*
 
