@@ -52,6 +52,7 @@ const Holo = () => {
 
   const data = holoData.description;
   const image2 = holoData.images[1].url;
+  const audio = holoData.audio;
   function Back() {
     const navigate = useNavigate();
     const goBack = () => {
