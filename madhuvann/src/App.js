@@ -15,6 +15,7 @@ import Feedback from "./Components/feedback/Feedback.jsx";
 
 
 
+
 function App() {
   return (
     <div>
@@ -32,6 +33,7 @@ function App() {
           {/* <Route path="/about" exact element={<about />} /> */}
           <Route path="/about" exact element={<About />} /> 
           <Route path="/Feedback" exact element={<Feedback/>}/>
+          
 
         </Routes>
       </Router>
