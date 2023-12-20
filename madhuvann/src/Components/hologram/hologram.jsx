@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./hologram.css";
 import { useNavigate } from "react-router-dom";
+import holo from "../Assets/holo_mode.png";
+import TextToSpeechToggle from "../tts/tts";
 
 const Holo = () => {
   const { id } = useParams();
@@ -21,7 +23,7 @@ const Holo = () => {
           );
         }
         const data = await response.json();
-        // Assuming 'fauna' is the nested property
+
         setHoloData(data.fauna);
       } catch (error) {
         console.error("Error fetching detailed information:", error.message);
@@ -34,7 +36,7 @@ const Holo = () => {
   }, [id]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div> loading./...</div>;
   }
 
   if (!holoData) {
@@ -50,34 +52,45 @@ const Holo = () => {
     };
     return (
       <>
-        <button onClick={goBack}>Back</button>
+        <button
+          style={{ marginTop: "1.5vh", marginLeft: ".78rem" }}
+          onClick={goBack}
+        >
+          <img style={{ height: "5vh" }} src={holo} />
+        </button>
       </>
     );
   }
 
   return (
-    <div className="page">
-      <div className="page-div">
-        <div className="image top">
-          <img className="holoimage" src={image2} alt="animal" />
-        </div>
-        <div className="flex">
-          <div className="image left">
+    <div>
+      <div style={{ backgroundColor: "black" }}>
+        <Back />
+      </div>
+      <div className="page">
+        <div className="page-div">
+          <div className="image top">
             <img className="holoimage" src={image2} alt="animal" />
+            <p className="white">{holoData.fname}</p>
           </div>
-          <div className="square" />
-          <div className="image right">
+          <div className="flex">
+            <div className="image left">
+              <img className="holoimage" src={image2} alt="animal" />
+              <p className="white">{holoData.fname}</p>
+            </div>
+            <div className="square" />
+            <div className="image right">
+              <img className="holoimage" src={image2} alt="animal" />
+              <p className="white">{holoData.fname}</p>
+            </div>
+          </div>
+          <div className="image bottom">
             <img className="holoimage" src={image2} alt="animal" />
+            <p className="white">{holoData.fname}</p>
           </div>
-        </div>
-        <div className="image bottom">
-          <img className="holoimage" src={image2} alt="animal" />
         </div>
       </div>
-      <div>
-        <Back> back</Back>
-        
-      </div>
+      <TextToSpeechToggle textToRead={data} />
     </div>
   );
 };
