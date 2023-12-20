@@ -12,7 +12,7 @@ const TextToSpeechToggle = ({ textToRead }) => {
     const newUtterance = new SpeechSynthesisUtterance(textToRead);
     const voices = window.speechSynthesis.getVoices();
     const naturalVoice = voices.find((voice) => voice.name.includes("Zira"));
-    newUtterance.voice = naturalVoice || voices[0];
+    newUtterance.voice = naturalVoice;
     return newUtterance;
   };
 

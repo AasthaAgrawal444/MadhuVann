@@ -25,7 +25,7 @@
   height: 12em;
   background-size: cover;
   filter: brightness(120%);
-  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, transparent 100%);
+  /* mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, transparent 100%); */
 }
 .flex {
   display: flex;
