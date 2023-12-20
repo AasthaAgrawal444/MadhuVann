@@ -11,8 +11,9 @@ import DetailedPage from "./Components/Description/description.jsx";
 import Holo from "./Components/hologram/hologram.jsx";
 import FaunaCardList from "./Components/fauna/fauna.jsx";
 import About from "./Components/AboutUs/about.jsx";
-import Vids from "./Components/vids/vids.jsx";
-import Videos from "./Components/eduVideos/Videos.jsx";
+import Feedback from "./Components/feedback/Feedback.jsx";
+
+
 
 function App() {
   return (
@@ -29,10 +30,9 @@ function App() {
           <Route path="/details/:id" element={<DetailedPage />} />
           <Route path="/holo/:id" element={<Holo />} />
           {/* <Route path="/about" exact element={<about />} /> */}
-          <Route path="/about" exact element={<About />} />
-          <Route path="/vids" exact element={<Vids />} />
-          <Route path="/eduVideos" exact element={<Videos />} />
-          <Route path="/about" exact element={<About />} />
+          <Route path="/about" exact element={<About />} /> 
+          <Route path="/Feedback" exact element={<Feedback/>}/>
+
         </Routes>
       </Router>
     </div>
