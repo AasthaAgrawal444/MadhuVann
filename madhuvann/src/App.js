@@ -15,8 +15,6 @@ import Videos from "./Components/eduVideos/Videos.jsx";
 import Feedback from "./Components/feedback/Feedback.jsx";
 
 
-
-
 function App() {
   return (
     <div>
