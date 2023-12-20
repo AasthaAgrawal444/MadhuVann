@@ -11,8 +11,6 @@ import DetailedPage from "./Components/Description/description.jsx";
 import Holo from "./Components/hologram/hologram.jsx";
 import FaunaCardList from "./Components/fauna/fauna.jsx";
 import About from "./Components/AboutUs/about.jsx";
-
-
 import Videos from "./Components/eduVideos/Videos.jsx";
 import Feedback from "./Components/feedback/Feedback.jsx";
 
