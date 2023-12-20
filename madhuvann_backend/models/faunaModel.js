@@ -35,10 +35,10 @@ const faunaSchema = new mongoose.Schema({
     type: String,
     required: [true, "please enter url link"],
   },
-  // audio: {
-  //   type: Buffer,
-  //   required: true,
-  // },
+  audio: {
+    type: String,
+    required: true,
+  },
   
   category: {
     type: String,

@@ -25,8 +25,8 @@ const Holo = () => {
         // Assuming 'fauna' is the nested property
         setHoloData(data.fauna);
 
-        let music = new Audio(JungleSound);
-        music.play();
+        // let music = new Audio(JungleSound);
+        // music.play();
         // if(Back) {
         //   music.pause();
         // }
