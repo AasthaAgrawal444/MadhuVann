@@ -86,6 +86,7 @@ const DetailedPage = () => {
                 height="300px"
                 class="embed-responsive-item"
                 src={detailedInfo.link}
+                title="video"
               ></iframe>
             </div>
           </div>
