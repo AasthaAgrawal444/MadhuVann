@@ -35,16 +35,10 @@ const faunaSchema = new mongoose.Schema({
     type: String,
     required: [true, "please enter url link"],
   },
-
-  // video: {
-  //   public_id:{type: String,
-  //         required: true,
-  //   },
-  //   url: {
-  //     type: String,
-  //     required: true,
-  //   }
-  // },
+  audio: {
+    type: String,
+    required: true,
+  },
   
   category: {
     type: String,
@@ -62,11 +56,6 @@ const faunaSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter where they are found"],
   },
-//   user: {
-//     type: mongoose.Schema.ObjectId,
-//     ref: "Admin",
-//     required: true,
-//   },
   createdAt: {
     type: Date,
     default: Date.now,

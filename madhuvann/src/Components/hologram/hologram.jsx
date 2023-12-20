@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./hologram.css";
 import { useNavigate } from "react-router-dom";
+import JungleSound from "../audios/junglesound.mp3";
 import holo from "../Assets/holo_mode.png";
 import TextToSpeechToggle from "../tts/tts";
 
@@ -25,6 +26,12 @@ const Holo = () => {
         const data = await response.json();
 
         setHoloData(data.fauna);
+<<<<<<< HEAD
+=======
+
+        let music = new Audio(JungleAudio);
+        music.play();
+>>>>>>> ece8920a8b306faf4ff676bcbb8a96bb0f462cc5
       } catch (error) {
         console.error("Error fetching detailed information:", error.message);
       } finally {
@@ -50,6 +57,7 @@ const Holo = () => {
     const goBack = () => {
       navigate(-1);
     };
+    
     return (
       <>
         <button
