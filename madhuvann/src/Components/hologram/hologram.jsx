@@ -4,6 +4,7 @@ import "./hologram.css";
 import { useNavigate } from "react-router-dom";
 import holo from "../Assets/holo_mode.png";
 import TextToSpeechToggle from "../tts/tts";
+import JungleAudio from "../Assets/junglechirping.mp3";
 
 const Holo = () => {
   const { id } = useParams();
@@ -25,6 +26,8 @@ const Holo = () => {
         const data = await response.json();
 
         setHoloData(data.fauna);
+        let music = new Audio(JungleAudio);
+        music.play();
       } catch (error) {
         console.error("Error fetching detailed information:", error.message);
       } finally {
@@ -64,9 +67,7 @@ const Holo = () => {
 
   return (
     <div>
-      <div style={{ backgroundColor: "black" }}>
-        <Back />
-      </div>
+      <div style={{ backgroundColor: "black" }}></div>
       <div className="page">
         <div className="page-div">
           <div className="image top">
@@ -90,7 +91,10 @@ const Holo = () => {
           </div>
         </div>
       </div>
-      <TextToSpeechToggle textToRead={data} />
+      <div style={{ backgroundColor: "black" }}>
+        <Back />
+        <TextToSpeechToggle textToRead={data} />
+      </div>
     </div>
   );
 };

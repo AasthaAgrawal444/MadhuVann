@@ -55,6 +55,7 @@ const TextToSpeechToggle = ({ textToRead }) => {
             height: "4rem",
             borderRadius: "8px 8px 8px 8px",
             borderColor: "#97b18e",
+            marginBottom: "1rem",
           }}
         >
           <img src={pause} />
@@ -75,6 +76,7 @@ const TextToSpeechToggle = ({ textToRead }) => {
             borderRadius: "8px 8px 8px 8px",
             backgroundColor: "#97b18e",
             borderColor: "#97b18e",
+            marginBottom: "1rem",
           }}
         >
           <img src={play} />
@@ -90,6 +92,12 @@ const TextToSpeechToggle = ({ textToRead }) => {
           onClick={onPlayerClick}
           style={{
             color: "black",
+            width: "7rem",
+            height: "4rem",
+            borderRadius: "8px 8px 8px 8px",
+            backgroundColor: "#97b18e",
+            borderColor: "#97b18e",
+            marginBottom: "1rem",
           }}
         >
           <img src={resume} />
@@ -110,16 +118,9 @@ const TextToSpeechToggle = ({ textToRead }) => {
             borderRadius: "8px 8px 8px 8px",
             backgroundColor: "#97b18e",
             borderColor: "#97b18e",
+            marginBottom: "1rem",
           }}
         >
-          <svg
-            className="player-button"
-            viewBox="0 0 30 30"
-            onClick={onPlayerClick}
-          >
-            <polygon points="0,0 7.5,0 7.5,30 0,30" />
-            <polygon points="12.5,0 30,15 12.5,30" />
-          </svg>
           Resume
         </button>
       </div>
