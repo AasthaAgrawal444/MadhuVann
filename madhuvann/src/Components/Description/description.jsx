@@ -5,6 +5,9 @@ import Navbar from "../homepage/Navbar";
 import text_button from "../Assets/button_text.png";
 import Loader from "../layouts/Loader/Loader";
 import "./description.css";
+import QRcode from "react-qr-code";
+import TextToSpeechToggle from "../tts/tts";
+var linking = window.location.href;
 
 const DetailedPage = () => {
   const { id } = useParams();
@@ -116,6 +119,15 @@ const DetailedPage = () => {
               <i>({detailedInfo.scientificname})</i>
             </div>
             <div>
+              <QRcode
+                size={128}
+                style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+                bgColor="black"
+                fgColor="white"
+                value={linking}
+              />
+            </div>
+            <div>
               <Link to={`/holo/${id}`}>
                 <img
                   style={{ height: "3rem" }}
@@ -141,17 +153,12 @@ const DetailedPage = () => {
             {detailedInfo.location}
           </div>
         </div>
+        <div>
+          <TextToSpeechToggle textToRead={detailedInfo.description} />
+        </div>
         <div className="desc-div">
           <div className="desc">{detailedInfo.description}</div>
         </div>
-
-        <button
-          style={{ backgroundImage: "url(path/to/button-image1.png)" }}
-        ></button>
-
-        <button
-          style={{ backgroundImage: "url(path/to/button-image2.png)" }}
-        ></button>
       </div>
     </div>
   );
