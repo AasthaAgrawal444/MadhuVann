@@ -16,6 +16,19 @@
   background-color: #97b18e;
   border-radius: 2rem;
   width: 8rem;
+  height: 2rem;
+  color: #365945;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.kids_check {
+  background-color: #97b18e;
+  border-radius: 2rem;
+  width: 8rem;
+  height: 2rem;
   color: #365945;
   font-size: 1rem;
   display: inline-flex;
@@ -88,4 +101,9 @@ button {
   text-decoration: none;
   font-size: 17px;
   display: block;
+}
+.kids_label {
+  height: 2rem;
+  text-align: inline;
+  display: inline;
 }
