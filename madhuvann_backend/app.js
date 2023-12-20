@@ -22,9 +22,8 @@ app.use(
   })
 );
 
-
-
 app.use("/api/v1", fauna);
+
 
 //middleware for error
 app.use(errorMiddleware);

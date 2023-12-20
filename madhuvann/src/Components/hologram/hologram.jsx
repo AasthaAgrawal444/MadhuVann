@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./hologram.css";
 import { useNavigate } from "react-router-dom";
+import JungleSound from "../audios/junglesound.mp3";
 
 const Holo = () => {
   const { id } = useParams();
@@ -23,6 +24,12 @@ const Holo = () => {
         const data = await response.json();
         // Assuming 'fauna' is the nested property
         setHoloData(data.fauna);
+
+        let music = new Audio(JungleSound);
+        music.play();
+        // if(Back) {
+        //   music.pause();
+        // }
       } catch (error) {
         console.error("Error fetching detailed information:", error.message);
       } finally {
@@ -48,6 +55,7 @@ const Holo = () => {
     const goBack = () => {
       navigate(-1);
     };
+    
     return (
       <>
         <button onClick={goBack}>Back</button>
