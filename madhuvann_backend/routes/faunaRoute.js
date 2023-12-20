@@ -1,10 +1,12 @@
 const express = require("express");
+
 const {
   getallFaunas,
   createFloraFauna,
   updateFauna,
   getFaunaDetails,
 } = require("../controllers/faunaController");
+
 
 const router = express.Router();
 
