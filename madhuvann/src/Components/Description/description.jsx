@@ -7,6 +7,7 @@ import Loader from "../layouts/Loader/Loader";
 import "./description.css";
 import QRcode from "react-qr-code";
 import TextToSpeechToggle from "../tts/tts";
+
 var linking = window.location.href;
 
 const DetailedPage = () => {
