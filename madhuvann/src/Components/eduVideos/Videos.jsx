@@ -8,7 +8,7 @@ const Videos = () => {
   return (
     <div>
     <Navbar />
-        <div className='cards'>
+        <div className='cocards'>
         {VideosList.map((VideoList) => (
             <VideoCard 
                 key={VideoList.id}

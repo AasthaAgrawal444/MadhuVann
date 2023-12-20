@@ -1,0 +1,36 @@
+.Flex_bars {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    gap: 35%;
+  }
+
+  .logos {
+    width: 20em;
+  }
+
+  .hamb {
+    width: 2em;
+    margin: 3rem 1rem;
+  }
+  
+  @media (max-width: 800px) {
+    .logos {
+      width: 30vw;
+    }
+    
+    .Flex_bars {
+      display: flex;
+      /* justify-content: space-between; */
+      gap: 25%;
+      align-items: flex-start;
+      padding-left: 1em;
+      padding-right: 0em;
+      padding-bottom: 1em;
+    }
+  }
+  
+  
+  

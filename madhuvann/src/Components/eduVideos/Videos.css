@@ -4,7 +4,7 @@ body {
     width: 100%;
   }
   
-  .cards {
+  .cocards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
