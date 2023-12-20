@@ -1,0 +1,17 @@
+.circle {
+  color: red;
+  width: 25rem;
+  height: 25rem;
+
+  margin: 5rem;
+  border-radius: 100%;
+  border-color: blue;
+  border-style: dotted;
+  margin-left: 35%;
+}
+.left {
+  margin: auto;
+}
+.pagekids {
+  background-image: url("../Assets/kids2.png");
+}

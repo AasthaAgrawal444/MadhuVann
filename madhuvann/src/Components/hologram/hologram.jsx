@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import "./hologram.css";
 import { useNavigate } from "react-router-dom";
 import holo from "../Assets/holo_mode.png";
+import TextToSpeechToggle from "../tts/tts";
 
 const Holo = () => {
   const { id } = useParams();
@@ -22,7 +23,7 @@ const Holo = () => {
           );
         }
         const data = await response.json();
-        // Assuming 'fauna' is the nested property
+
         setHoloData(data.fauna);
       } catch (error) {
         console.error("Error fetching detailed information:", error.message);
@@ -35,7 +36,7 @@ const Holo = () => {
   }, [id]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div> loading./...</div>;
   }
 
   if (!holoData) {
@@ -64,27 +65,32 @@ const Holo = () => {
   return (
     <div>
       <div style={{ backgroundColor: "black" }}>
-        <Back> back</Back>
+        <Back />
       </div>
       <div className="page">
         <div className="page-div">
           <div className="image top">
             <img className="holoimage" src={image2} alt="animal" />
+            <p className="white">{holoData.fname}</p>
           </div>
           <div className="flex">
             <div className="image left">
               <img className="holoimage" src={image2} alt="animal" />
+              <p className="white">{holoData.fname}</p>
             </div>
             <div className="square" />
             <div className="image right">
               <img className="holoimage" src={image2} alt="animal" />
+              <p className="white">{holoData.fname}</p>
             </div>
           </div>
           <div className="image bottom">
             <img className="holoimage" src={image2} alt="animal" />
+            <p className="white">{holoData.fname}</p>
           </div>
         </div>
       </div>
+      <TextToSpeechToggle textToRead={data} />
     </div>
   );
 };
