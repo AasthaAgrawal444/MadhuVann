@@ -13,8 +13,10 @@ import FaunaCardList from "./Components/fauna/fauna.jsx";
 import About from "./Components/AboutUs/about.jsx";
 import Videos from "./Components/eduVideos/Videos.jsx";
 import Feedback from "./Components/feedback/Feedback.jsx";
-
-
+import Kids from "./Components/kids/kids.jsx";
+import Vid1 from "./Components/kids/vid1.jsx";
+import Vid2 from "./Components/kids/vid2.jsx";
+import Holoedu from "./Components/holoedu/holoedu.jsx";
 function App() {
   return (
     <div>
@@ -38,11 +40,9 @@ function App() {
           <Route path="/vid1" exact element={<Vid1 />} />
           <Route path="/vid2" exact element={<Vid2 />} />
 
-          <Route path="/about" exact element={<About />} /> 
-          <Route path="/Feedback" exact element={<Feedback/>}/>
-          
-
-
+          <Route path="/about" exact element={<About />} />
+          <Route path="holoedu" exact element={<Holoedu />} />
+          <Route path="/Feedback" exact element={<Feedback />} />
         </Routes>
       </Router>
     </div>

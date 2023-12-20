@@ -67,14 +67,28 @@ const Holo = () => {
 
   return (
     <div>
-      <div style={{ backgroundColor: "black" }}>
-        <iframe
-          frameborder="0"
-          scrolling="no"
-          src={holoData.audio}
-          width="50"
-          height="30"
-        ></iframe>
+      <div
+        style={{
+          backgroundColor: "black",
+          display: "flex",
+          justifyContent: "space-between",
+          padding: "2rem",
+          alignItems: "center",
+        }}
+      >
+        <div>
+          {" "}
+          <iframe
+            frameborder="0"
+            scrolling="no"
+            src={holoData.audio}
+            width="50"
+            height="30"
+          ></iframe>
+        </div>
+        <div>
+          <Back />
+        </div>
       </div>
       <div className="page">
         <div className="page-div">
@@ -100,7 +114,6 @@ const Holo = () => {
         </div>
       </div>
       <div style={{ backgroundColor: "black" }}>
-        <Back />
         <TextToSpeechToggle textToRead={data} />
       </div>
     </div>

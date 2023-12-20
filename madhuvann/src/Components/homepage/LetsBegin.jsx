@@ -30,18 +30,18 @@ function LetsBegin() {
       <div className="child">
         <img className="image" src={begin} alt="begin image" />
         <div className="letsButton">
-          {/* <button className="letsbegin">
+          <button className="letsbegin">
             <AnchorLink
               href="#flfa"
               style={{ textDecoration: "none", color: "white" }}
             >
               Let's Begin
             </AnchorLink>
-          </button> */}
-          <Link to="/eduVideos">
+          </button>
+          {/* <Link to="/eduVideos">
             {" "}
             <button className="letsbegin">Let's Begin</button>
-          </Link>
+          </Link> */}
         </div>
       </div>
       <br />

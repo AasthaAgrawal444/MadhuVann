@@ -1,280 +1,74 @@
 .desktop {
-    background-color: #f2efdc;
-     justify-content: center;
-    width: 100%;
+  background-color: #f2efdc;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 2rem 15rem 2rem 15rem;
 }
-  
- .desktop .overlap-group { 
-    background-image: url('../Assets/backga.png');
-     background-position: 50% 50%;
-    background-size: cover;  
-    position: absolute;
-    /* text-align: center; */
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    margin: 1%;
-    top: 6rem;
- }
 
-
+.overlap-group {
+  background-image: url("../Assets/backga.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin: 1%;
+  top: 6rem;
+}
 
 .overlap-group > h2 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 500;
- }
-
-  /*
-
-.desktop .text-wrapper {
-    color: #000000;
-    font-size: 1.5rem;
-    font-weight: 400;
-    left: 45px;
-    letter-spacing: 1.12px;
-    text-align: center;
-}
-  */
-
-
-.desktop .welcome-to-madhuvann {
-    color: #000000;
-    font-weight: 600;
-    text-align: center;
-    margin: 0 2rem;
-    /* letter-spacing: 1.68px; */
-    /* top: 93px; */
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
 }
 
-.text-wrapper-1 {
-    display: flex;
-    flex-wrap: wrap;
+.dekstop {
+  margin: 2rem;
 }
-
-.mission > h2 {
-    text-align: center;
+.welcome-to-madhuvann {
+  display: inline;
 }
-
-.text-wrapper-1 .mission > img {
-    display: flex;
-    align-items: flex-end;
-    width: 50%;
+.welcome {
+  /* font-weight: bolder; */
+  font-size: 2.9rem;
 }
-
-.text-wrapper-1 .mission {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 50%;
+.gsu-wildlife-center {
+  height: 15rem;
 }
-
-.text-wrapper-2 {
-    display: flex;
-    flex-wrap: wrap;
+.environment-earth {
+  height: 15rem;
 }
-
-.text-wrapper-2 .holo {
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
-    align-items: flex-start;
+.ourmission {
+  display: flex;
 }
-
-.text-wrapper-3 {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 50%;
-    align-items: flex-start;
+.text-wrapper {
+  width: 50%;
+  margin: 2rem;
 }
-
-.text-wrapper-4 {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 50%;
-    align-items: flex-start;
+.text-holo {
 }
-
-/*
-
-.desktop .text-wrapper-2 {
-    color: #000000;
-    font-family: "Amaranth-Regular", Helvetica;
-    font-size: 55px;
-    font-weight: 400;
-    height: 84px;
-    left: 1002px;
-    letter-spacing: 2.2px;
-    line-height: 84.2px;
-    position: absolute;
-    top: 925px;
-    white-space: nowrap;
+.environment-earth {
+  width: 50%;
 }
-
-.desktop .p {
-    color: #000000;
-    font-family: "Amaranth-Regular", Helvetica;
-    font-size: 28px;
-    font-weight: 400;
-    height: 301px;
-    left: 941px;
-    letter-spacing: 1.12px;
-    line-height: 42.8px;
-    position: absolute;
-    text-align: center;
-    top: 1040px; */
-    /* width: 817px; */
-/* }
-
-.desktop .text-wrapper-3 {
-    color: #000000;
-    font-family: "Amaranth-Regular", Helvetica;
-    font-size: 55px;
-    font-weight: 400;
-    height: 84px;
-    left: 273px;
-    letter-spacing: 2.2px;
-    line-height: 84.2px;
-    position: absolute;
-    top: 419px;
-    white-space: nowrap;
+.textholo {
+  display: flex;
 }
-
-.desktop .text-wrapper-4 {
-    color: #000000;
-    font-family: "Amaranth-Regular", Helvetica;
-    font-size: 28px;
-    font-weight: 400;
-    height: 258px;
-    left: 94px;
-    letter-spacing: 1.12px;
-    line-height: 42.8px;
-    position: absolute;
-    text-align: center;
-    top: 1641px; */
-    /* width: 733px; */
-/* }
-
-.desktop .flexcontainer {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    height: 306px; */
-    /* left: 863px; */
-    /* position: absolute; */
-    /* top: 2148px; */
-    /* width: 923px; */
-/* } */
-
-/* .desktop .text {
-    align-self: stretch;
-    color: #000000;
-    font-family: "Amaranth-Regular", Helvetica;
-    font-size: 28px;
-    font-weight: 400;
-    letter-spacing: 1.12px;
-    line-height: 42.8px;
-    position: relative;
-    text-align: center;
+.text {
+  padding: 2rem;
 }
-
-.desktop .span {
-    color: #000000;
-    font-family: "Amaranth-Regular", Helvetica;
-    font-size: 28px;
-    font-weight: 400;
-    letter-spacing: 1.12px;
-    line-height: 42.8px;
+.text-wrapper3 {
+  display: flex;
 }
-
-.desktop .output {
-    height: 330px;
-    left: 970px;
-    object-fit: cover;
-    position: absolute;
-    top: 446px;
-    width: 787px;
+.mission {
+  padding-left: 2rem;
+  padding-bottom: 3rem;
 }
-
-.desktop .environment-earth {
-    height: 299px;
-    left: 986px;
-    object-fit: cover;
-    position: absolute;
-    top: 1568px;
-    width: 756px;
+.headAbout {
+  text-decoration: underline;
 }
-
-.desktop .text-wrapper-5 {
-    color: #000000;
-    font-family: "Amaranth-Regular", Helvetica;
-    font-size: 55px;
-    font-weight: 400;
-    height: 84px;
-    left: 159px;
-    letter-spacing: 2.2px;
-    line-height: 84.2px;
-    position: absolute;
-    top: 1525px;
-    white-space: nowrap;
+.element {
+  margin-bottom: 2.6rem;
 }
-
-.desktop .text-wrapper-6 {
-    color: #000000;
-    font-family: "Amaranth-Regular", Helvetica;
-    font-size: 55px;
-    font-weight: 400;
-    height: 84px;
-    left: 1074px;
-    letter-spacing: 2.2px;
-    line-height: 84.2px;
-    position: absolute;
-    top: 2053px;
-    white-space: nowrap;
-}
-
-.desktop .gsu-wildlife-center {
-    height: 389px;
-    left: 45px;
-    object-fit: cover;
-    position: absolute;
-    top: 2116px;
-    width: 756px;
-}
-
-.desktop .element {
-    height: 299px;
-    left: 45px;
-    object-fit: cover;
-    position: absolute;
-    top: 1010px;
-    width: 756px;
-}
-
-.desktop .picsart {
-    height: 80px;
-    left: 907px;
-    object-fit: cover;
-    position: absolute;
-    top: 7px;
-    width: 86px;
-}
-
-.desktop .menu {
-    height: 60px;
-    left: 1828px;
-    object-fit: cover;
-    position: absolute;
-    top: 17px;
-    width: 60px;
-}
-
-.desktop .hamburger {
-    height: 50px;
-    left: 22px;
-    object-fit: cover;
-    position: absolute;
-    top: 22px;
-    width: 50px;
-}  */
