@@ -11,17 +11,10 @@ import DetailedPage from "./Components/Description/description.jsx";
 import Holo from "./Components/hologram/hologram.jsx";
 import FaunaCardList from "./Components/fauna/fauna.jsx";
 import About from "./Components/AboutUs/about.jsx";
-
-
 import Videos from "./Components/eduVideos/Videos.jsx";
 import Feedback from "./Components/feedback/Feedback.jsx";
 
 
-
-
-import Kids from "./Components/kids/kids.jsx";
-import Vid1 from "./Components/kids/vid1.jsx";
-import Vid2 from "./Components/kids/vid2.jsx";
 function App() {
   return (
     <div>
@@ -47,6 +40,7 @@ function App() {
 
           <Route path="/about" exact element={<About />} /> 
           <Route path="/Feedback" exact element={<Feedback/>}/>
+          
 
 
         </Routes>

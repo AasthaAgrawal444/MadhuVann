@@ -26,7 +26,7 @@ const Feedback = () => {
     <div className="">
       <Navbar />
       <div className="feedback-container">
-        <h1 className="feedback-title">Share your Feedback!</h1>
+        <h1 className="feedback-title">YOUR FEEDBACK IS VALUABLE TO US!</h1>
         <form onSubmit={handleSubmit} className="feedback-page">
           <div className="field">
             <label htmlFor="name">Name:</label>
